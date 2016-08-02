@@ -3,7 +3,7 @@
 
 .sidebar{
 	width: 270px;
-	position: fixed;
+	// position: fixed;
 	top: 0;
 	left: 0;
 	background-color: $cabinet;
@@ -42,7 +42,8 @@
 		padding-left: 60px;
 		display: block;
 		border-bottom: 3px solid #24252f;
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 		text-transform: uppercase;
 		color: #a3a5a8;
 		position: relative;
@@ -146,7 +147,7 @@
 
 .cabinets{
 	background-color: #f5f8f9;
-	padding: 20px 0 100px;
+	padding: 20px 20px 40px;
 }
 .cabinet-inner{
 	width: 1106px;
@@ -218,10 +219,13 @@
 	max-width: 620px;
 }
 .edit-icon{
-	a{
+	button{
 		color: $red1;
 		text-decoration: underline;
 		position: relative;
+		border: none;
+		background: none;
+		font-family: $Lato-Semibold;
 		&:before{
 			content: '';
 			position: absolute;
@@ -234,6 +238,7 @@
 
 .information{
 	background-color: #fff;
+	padding: 0 20px 40px 20px;
 	ul{
 		padding: 30px;
 	}
@@ -257,7 +262,8 @@
 	a{
 		color: #262832;
 		font-size: 16px;
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 	}
 }
 
@@ -329,7 +335,8 @@
 
 .comp-name{
 	margin-left: 10px;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	color: $text-bold;
 	a{
 		color: $text-bold;
@@ -354,7 +361,8 @@
 	a{
 		color: $red1;
 		text-transform: uppercase;
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 	}
 }
 
@@ -365,7 +373,8 @@
 
 .create-head{
 	border-bottom: 2px solid #ebeeef;
-	padding: 22px 0;
+	padding: 20px;
+	background-color: #fff;
 	a{
 		padding-left: 23px;
 		position: relative;
@@ -389,13 +398,15 @@
 	}
 }
 .company-create{
-	display: flex;
-	justify-content: space-between;
 	p{
 		margin: 22px 0;
 		text-transform: uppercase;
 		color: #86949b;
 	}
+}
+.company-create form{
+	display: flex;
+	justify-content: space-between;
 }
 
 .properties-head{
@@ -411,11 +422,14 @@
 }
 
 .cabinets{
+	display: flex;
+	width: 1420px;
+	margin: 20px auto;
 	input, select{
 		background: none;
 		border: none;
 		width: 100%;
-		border-bottom: 2px solid #dee8ea;
+		border-bottom: 1px solid #dee8ea;
 		margin-top: 30px;
 		color: #505a60;
 		padding: 5px 0 5px 11px;;
@@ -614,7 +628,8 @@
 	a{
 		padding: 10px 0;
 		padding-left: 10px;
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 		text-transform: uppercase;
 		color: #b8c2cc;
 		transition: color .35s ease;
@@ -629,7 +644,8 @@
 }
 
 .company-tender-price{
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	color: #3a4247;
 }
 .cabinet-tenders .company-properties{
@@ -640,7 +656,8 @@
 .cabinet-tenders .company-name a{
 	font-size: 16px;
 	color: #3a4247;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 }
 // END OF CABINET TENDERS
 
@@ -703,7 +720,7 @@
 		border-bottom: 2px solid #dee8ea;
 		padding-bottom: 7px;
 		&:first-child{
-			margin-top: 0;	
+			margin-top: 0;
 		}
 	}
 	a{
@@ -714,7 +731,8 @@
 
 .add-more{
 	position: relative;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	font-size: 12px;
 	color: $red1;
 	text-transform: uppercase;
@@ -797,9 +815,14 @@
 		border-right: 1px solid #ebeef0;
 	}
 	a{
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 		color: #b8c2cc;
 		text-transform: uppercase;
+		&:hover{
+			color: $red1;
+			transition: color .35s ease;
+		}
 		span{
 			font-size: 11px;
 		}
@@ -874,7 +897,8 @@
 .notify-head{
 	color: $green;
 	position: relative;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	&:before{
 		content: '';
 		position: absolute;
@@ -886,7 +910,8 @@
 
 .notify-body{
 	color: $text-bold;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	margin-top: 13px;
 	a{
 		color: $red1;
@@ -939,14 +964,16 @@
 
 .message-head{
 	color: $text;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 }
 
 .message-body{
 	margin-top: 15px;
 	margin-bottom: 18px;
 	color: $text-bold;
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	font-size: 12px;
 }
 
@@ -1146,8 +1173,12 @@ input.cmn-toggle-round:checked + label:after {
 
 .change-password{
 	margin-top: 13px;
-	padding: 20px;
+	// padding: 20px;
 	background-color: #fff;
+	form{
+		padding: 20px;
+		padding-top: 0;
+	}
 	.section-head{
 		padding-left: 0;
 	}

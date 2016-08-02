@@ -33,7 +33,8 @@
   border: 2px solid $red1;
   border-radius: 5px;
   background-color: $white;
-  font-family: $Lato-Bold;
+  font-family: $Lato;
+  font-weight: 700;
   &:hover{
       background-color: $red1;
       color: $white;
@@ -286,7 +287,8 @@
 		letter-spacing: 1px;
 	}
 	p{
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 		font-size: 12px;
 		a{
 			color: $red1;
@@ -522,7 +524,8 @@ progress::-webkit-progress-value {
 		letter-spacing: 1px;
 		border-radius: 5px;
 		font-size: $normal-text;
-		font-family: $Lato-Bold;
+		font-family: $Lato;
+		font-weight: 700;
 		@include hover-color($red1, $white);
 	}
 }

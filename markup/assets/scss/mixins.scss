@@ -54,7 +54,8 @@
     border: 2px solid $red1;
     border-radius: 5px;
     background-color: $white;
-    font-family: $Lato-Bold;
+    font-family: $Lato;
+    font-weight: 700;
 }
 
 @mixin button-grey{

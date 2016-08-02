@@ -15,7 +15,8 @@ h1, h2{
 	font-family: $MyriadPro-BoldCond;
 }
 h3{
-	font-family: $Lato-Bold;
+	font-family: $Lato;
+	font-weight: 700;
 	margin: 0;
 	color: $text-bold;
 }
@@ -57,10 +58,10 @@ section{
 @import '_owl.scss';
 @import '_main.scss';
 @import '_footer.scss';
-
 @import '_popup.scss';
 @import '_datemepicker.scss';
 @import '_cabinet.scss';
+@import '_responsive.scss';
 
 
 

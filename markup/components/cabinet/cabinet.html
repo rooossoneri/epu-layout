@@ -47,16 +47,33 @@
 			<div class="user-info">
 				<div class="edit">
 					<div class="edit-name">Контактное лицо:</div>
-					<div class="edit-icon"><a href="#">Править</a></div>
+					<div class="edit-icon"><button form="information-edit">Править</button></div>
 				</div>
 				<div class="information">
-					<ul>
+					<form action="submit" id="information-edit"></form>
+						<div class="information-name">
+							<input type="text" placeholder="Владислав">
+						</div>
+						<div class="information-name">
+							<input type="text" placeholder="Григоренков">
+						</div>
+						<div class="information-name">
+							<input type="text" placeholder="Старший менеджер">
+						</div>
+						<div class="information-phone">
+							<input type="number" placeholder="+380 (66) 123 - 45 - 67">
+						</div>
+						<div class="information-site">
+							<input type="url" placeholder="www.my-website.com">
+						</div>
+					</form>
+					<!-- <ul>
 						<li>Владислав</li>
 						<li>Григоренков</li>
 						<li>Старший менеджер</li>
 						<li>+380 (66) 123 - 45 - 67</li>
 						<li><a href="#">www.my-website.com</a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 			<div class="user-img">

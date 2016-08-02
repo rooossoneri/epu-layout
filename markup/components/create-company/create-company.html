@@ -45,12 +45,12 @@
     </div>
     <p class="create-company-head">создание новой компании</p>
     <div class="company-create">
-      <div class="common-properties">
-        <div class="properties-head">
-          Общая информация
-        </div>
-        <div class="properties-all">
-          <form action="submit">
+      <form action="submit" id="form-company-create">
+        <div class="common-properties">
+          <div class="properties-head">
+            Общая информация
+          </div>
+          <div class="properties-all">
             <div class="properties-radio">
               <div class="radio-customer">
                 <input type="radio" value="Заказчик" name="customer">
@@ -98,74 +98,74 @@
                 </div>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-      <div class="right-wrap">
-        <div class="create-contacts">
-          <div class="properties-head">
-            Общая информация
-          </div>
-          <div class="properties-all no-m">
-            <div class="company-contact-name input-field">
-              <input type="text" id="name1">
-              <label for="name1">Имя</label>
-            </div>
-            <div class="company-contact-surname input-field">
-              <input type="text" id="surname">
-              <label for="surname">Фамилия</label>
-            </div>
-            <div class="company-contact-position input-field">
-              <input type="text" id="vacancy">
-              <label for="vacancy">Должность</label>
-            </div>
-            <div class="company-contact-phone">
-              <input type="number" placeholder="+380 (__) ___ - __ - __">
-            </div>
-            <div class="company-form input-field">
-              <select name="form-type" id="">
-                <option value="" disabled="" selected>Форма собственности</option>
-                <option value="">FOP</option>
-                <option value="">FOP</option>
-                <option value="">FOP</option>
-              </select>
-            </div>
           </div>
         </div>
-        <div class="create-location">
-          <div class="properties-head">
-            Расположение компании
-          </div>
-          <div class="properties-all no-m">
-            <div class="company-form1 input-field">
-              <select name="form-type" id="">
-                <option value="" disabled="" selected>Область</option>
-                <option value="">FOP</option>
-                <option value="">FOP</option>
-                <option value="">FOP</option>
-              </select>
+        <div class="right-wrap">
+          <div class="create-contacts">
+            <div class="properties-head">
+              Общая информация
             </div>
-            <div class="company-contact-city">
-              <div class="city1 input-field">
-                <input type="text" id="city">
-                <label for="city">Населенный пункт</label>
+            <div class="properties-all no-m">
+              <div class="company-contact-name input-field">
+                <input type="text" id="name1">
+                <label for="name1">Имя</label>
               </div>
-              <div class="index input-field">
-                <input type="text" id="index">
-                <label for="index">Индекс</label>
+              <div class="company-contact-surname input-field">
+                <input type="text" id="surname">
+                <label for="surname">Фамилия</label>
+              </div>
+              <div class="company-contact-position input-field">
+                <input type="text" id="vacancy">
+                <label for="vacancy">Должность</label>
+              </div>
+              <div class="company-contact-phone">
+                <input type="number" placeholder="+380 (__) ___ - __ - __">
+              </div>
+              <div class="company-form input-field">
+                <select name="form-type" id="">
+                  <option value="" disabled="" selected>Форма собственности</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                </select>
               </div>
             </div>
-            <div class="company-contact-phone input-field">
-              <input type="text" id="company-address">
-              <label for="company-address">Адрес компании</label>
+          </div>
+          <div class="create-location">
+            <div class="properties-head">
+              Расположение компании
+            </div>
+            <div class="properties-all no-m">
+              <div class="company-form1 input-field">
+                <select name="form-type" id="">
+                  <option value="" disabled="" selected>Область</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                </select>
+              </div>
+              <div class="company-contact-city">
+                <div class="city1 input-field">
+                  <input type="text" id="city">
+                  <label for="city">Населенный пункт</label>
+                </div>
+                <div class="index input-field">
+                  <input type="text" id="index">
+                  <label for="index">Индекс</label>
+                </div>
+              </div>
+              <div class="company-contact-phone input-field">
+                <input type="text" id="company-address">
+                <label for="company-address">Адрес компании</label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
     <div class="create-btns">
       <div class="btn-save">
-        <button>Сохранить компанию</button>
+        <button form="form-company-create">Сохранить компанию</button>
       </div>
       <div class="btn-cancel">
         <a href="#">Отмена</a>
