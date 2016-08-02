@@ -1,0 +1,555 @@
+.test{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.cpv-popup{
+	background-color: #fff;
+	max-width: 575px;
+	margin: 0 auto;
+	// padding: 20px;
+	position: relative;
+	border-radius: 5px;	
+}
+.tree__list-item ul{
+	max-width: 485px;
+	margin-left: 30px;
+	li{
+		border-bottom: none;
+	}
+}
+.tree__list{
+		input{
+		-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid #cacece;
+	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	}
+	input:active, input:checked:active{
+		box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+	}
+	input:checked{
+		background-color: $yellow;
+	// border: 1px solid #adb8c0;
+	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #fff;
+	border: none;
+	padding: 10px;
+	}
+
+input:checked:after{
+	content: '';
+	@include bg($check);
+	font-size: 14px;
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	color: #fff;
+
+}
+}
+.input-popup{
+	background-color: #f5f8f9;
+	padding: 10px 20px;
+	input{
+		border: none;
+		border-radius: 5px;
+		width: 395px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		// margin-left: 20px;
+	}
+	button{
+    width: 133px;
+    border: none;
+    background-color: #dee8ea;
+    border-radius: 3px;
+    padding: 12px 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -13px;
+    text-transform: uppercase;
+    font-family: $Lato-Semibold;
+    font-size: 12px;
+    color: #737980;
+	}
+}
+.tree{
+	padding: 20px;
+	padding-bottom: 0;
+}
+.tree__list-item{
+	padding: 10px 0;
+	border-bottom: 1px solid #f8fafb;
+	position: relative;
+}
+.close-popup{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #dee8ea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.close-popups{
+    position: absolute;
+    top: -35px;
+    right: -7px;
+    font-size: 35px;
+    width: 40px;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup-head{
+	margin-top: 0;
+	font-size: 20px;
+	font-family: $MyriadPro-BoldCond;
+	color: $text-bold;
+	padding: 20px;
+	padding-bottom: 0;
+}
+.item-label{
+	position: relative;
+}
+.item-checkbox{
+	background: none;
+	// position: absolute;
+	top: -2px;
+	left: -1px;
+	z-index: 2; 
+}
+.item-text{
+	margin-left: 15px;
+	font-family: $Lato-Regular;
+	color: $text-bold;
+}
+.item-checkbox__fake{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  // background: red;
+  top: 0;
+  left: -1px;
+  border: 2px solid #ebeef0;
+  border-radius: 3px;
+  &:before{
+  	position: absolute;
+  	width: 15px;
+	  height: 15px;
+	  background: white;
+	  top: -2px;
+	  left: -1px;
+	  border: 2px solid #ebeef0;
+	  border-radius: 3px;
+  }
+}
+
+.popup-btns{
+	display: flex;	
+	padding: 20px;
+}
+.choose{
+	@include button-red;
+	display: block;
+	width: 70px;
+}
+.escape{
+	@include button-white;
+	display: block; 
+	width: 70px;
+	margin-left: 10px;
+}
+
+.choosen{
+	padding: 20px;
+}
+.choosen-list{
+	display: flex;
+	justify-content: flex-start;
+	li{
+		margin-left: 10px;
+		padding: 6px 11px;
+		border-radius: 20px;
+		background-color: $block-bg;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	span{
+		font-size: 12px;
+	}
+	a{
+		font-size: 18px;
+		color: #4b5257;
+	}
+}
+.tree__toggle{
+	width: 10px;
+	height: 6px;
+	position: absolute;
+	top: 17px;
+	right: 20px;
+	@include bg($dropdown);
+}
+.tree__list-item ul .tree__toggle{
+	top: 17px;
+	right: 0;
+}
+
+
+
+// LOCATION
+
+.location-dropdown{
+	max-width: 230px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: $block-bg;
+
+::-webkit-scrollbar              { background-color: #dee8ea; width: 10px; border-radius: 5px;
+ }
+// ::-webkit-scrollbar-button       { background-color: transparent;}
+::-webkit-scrollbar-track        { background-color: red; width: 10px; border-radius: 5px;}
+::-webkit-scrollbar-track-piece  { background-color: #dee8ea; }
+::-webkit-scrollbar-thumb        { background-color: #c2cfd1;
+width: 10px; }
+::-webkit-scrollbar-corner       { background-color: #dee8ea; }
+::-webkit-resizer                { background-color: #dee8ea; }
+}
+.location-dropdowns{
+	margin-top: 10px;
+	ul{
+		padding: 10px;
+		background-color: #fff;
+		max-height: 144px;
+		overflow-y: scroll;
+	}
+	li{
+		display: flex;
+		margin-top: 10px;
+		font-family: $Lato-Semibold;
+		color: #86949b;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+}
+.city{
+	margin-left: 17px;
+}
+.location-head{
+	input{
+		width: 100%;
+		border-radius: 5px;
+		border: none;
+		padding: 5px 10px;
+		box-sizing: border-box;
+	}
+}
+.location-btn{
+	text-align: center;
+	margin-top: 10px;
+	button{
+		@include button-red;
+		border: none;
+	}
+}
+.location-dropdowns{
+	input{
+		-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid #cacece;
+	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	}
+	input:active, input:checked:active{
+		box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+	}
+	input:checked{
+		background-color: $yellow;
+	// border: 1px solid #adb8c0;
+	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #fff;
+	border: none;	
+	padding: 10px;
+	}
+	input:checked:after{
+	content: '';
+	@include bg($check);
+	font-size: 14px;
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	color: #fff;
+}
+}
+
+
+
+
+
+.auth-popup{
+	max-width: 375px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+
+
+	::-webkit-input-placeholder {color: $text-p;
+	font-family: $Lato-Semibold; }
+	::-moz-placeholder          {color: $text-p;
+		font-family: $Lato-Semibold; }/* Firefox 19+ */
+	:-moz-placeholder           {color: $text-p;
+		font-family: $Lato-Semibold; }/* Firefox 18- */
+	:-ms-input-placeholder      {color: $text-p;
+	font-family: $Lato-Semibold; }
+}
+.auth-wrap{
+	padding: 30px;
+	padding-top: 0;
+}	
+.auth-head{
+	font-size: 24px;
+	color: $text-bold;
+	font-family: $MyriadPro-BoldCond;
+	text-align: center;
+}
+.reg-email, .reg-password{
+	input{
+		width: 100%;
+		border: none;
+		background-color: #fff;
+		border-bottom: 2px solid $block-bg;
+		padding: 11px 15px;
+		box-sizing: border-box;
+		transition: border-bottom .35s ease;
+		&:hover, &:focus{
+			border-bottom: 2px solid $red;
+		}
+	}
+}
+.reg-password{
+	margin-top: 10px;
+}
+.reg-dropdown{
+	position: relative;
+	p{
+		border-bottom: 2px solid $block-bg;
+		padding: 11px 15px;
+		box-sizing: border-box;
+		background-color: $white;
+		cursor: pointer;
+		margin-bottom: 0;
+	}
+	span{
+		position: absolute;
+		top: 17px;
+		right: 11px;
+		@include bg($dropdown);
+	}
+}
+.hidden-types{
+	display: none;
+	background-color: $white;
+	    padding: 6px 16px;
+	box-sizing: border-box;
+	li{
+		margin-top: 3px;
+		border-top: 2px solid $block-bg;
+		padding: 3px 0;
+		&:first-child{
+			margin-top: 0;
+			border-top: 0;
+		}
+	}
+}
+.checkbox-rules{
+	// display: flex;
+}
+.check-offer{
+	margin-left: 10px;
+	color: #505a60;
+	font-family: $Lato-Semibold;
+	a{
+		color: $red;
+	}
+}
+.rules{
+	display: flex;
+	margin-top: 20px;
+	input{
+		-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid #cacece;
+	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	}
+	input:active, input:checked:active{
+		box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+	}
+	input:checked{
+		background-color: $yellow;
+	// border: 1px solid #adb8c0;
+	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #fff;
+	border: none;	
+	padding: 10px;
+	}
+	input:checked:after{
+	content: '';
+	@include bg($check);
+	font-size: 14px;
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	color: #fff;
+}
+
+}
+
+.btn-reg{
+	text-align: center;
+	margin-top: 20px;
+	button{
+		@include button-red;
+		border: none;
+		padding: 11px 47px;
+	}
+}
+.reg-dropdown{
+	color: $text-p;
+	font-family: $Lato-Semibold;
+	a{
+		font-family: $Lato-Semibold;
+		color: $text-p;
+	}
+}
+
+.login, .registration{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	a{
+		display: block;
+		padding: 20px;
+		box-sizing: border-box;
+		color: $red;
+		font-family: $Lato-Bold;
+		transition: background-color .35s linear;
+		// transition: color .25s linear;
+		&:hover{
+			background-color: $yellow;
+			color: #fff;
+		}
+	}
+}
+
+.log-reg{
+	display: flex;
+	border-bottom: 2px solid $block-bg;
+}
+.forgive{
+	text-align: center;
+	margin-top: 10px;
+	a{
+		color: $red;
+		border-bottom: 1px solid $red;
+		font-family: $Lato-Semibold;
+	}
+}
+.btn-reg-a{
+	text-align: center;
+	margin-top: 20px;
+	button{
+		@include button-red;
+		border: none;
+		padding: 11px 47px;
+		@include hover($yellow);
+	}
+}
+
+.overlay-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    // display: none;
+}
+.registration-in{
+	display: none;
+}
+.second.active, .first.active{
+	display: block;
+}
+.second.disable, .first.disable{
+	display: none;
+}
+.second{
+	display: none;
+}
+.hidden-types.active{
+	display: block;
+}
+
+
+.calendar-picker{
+	display: flex;
+	padding: 20px;
+	box-sizing: border-box;
+	max-width: 500px;
+	background-color: #515b61;
+	margin: 0 auto;
+}
+.date-end{
+	text-align: right;
+	input{
+		text-align: right;
+	}
+}
+.date-begin, .date-end{
+	label{
+		// margin-bottom: 20px;
+	}
+	input{
+		border: none;
+		background: none;
+		cursor: pointer;
+		margin-top: 11px;
+		color: #f3f4f4;
+	}
+	::-webkit-input-placeholder {
+		color: #f3f4f4;
+		font-family: $Lato-Semibold; 
+	}
+	::-moz-placeholder{
+		color: #f3f4f4;
+		font-family: $Lato-Semibold;
+	 }/* Firefox 19+ */
+	:-moz-placeholder{
+		color: #f3f4f4;
+		font-family: $Lato-Semibold; 
+		}/* Firefox 18- */
+	:-ms-input-placeholder{
+		color: #f3f4f4;
+		font-family: $Lato-Semibold; 
+	}
+}

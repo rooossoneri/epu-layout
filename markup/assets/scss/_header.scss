@@ -1,0 +1,111 @@
+header{
+	background-image: url("%=static=%general/main.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	.inner{
+		display: flex;
+	}
+}
+.header-top{
+	.inner{
+		justify-content: flex-end;
+	}
+}
+.contact-phones, .language-switcher{
+	ul{
+		display: flex;
+	}
+}
+.contact-phones{
+	margin-right: 50px;
+	line-height: 56px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		@include bg($phone);
+		left: -42px;
+    	top: 17px;
+
+
+	}
+	a{
+		color: $text-bold;
+		font-family: $Lato-Black;
+		font-size: $large-text;
+		@include color($red);
+	}
+	li{
+		margin-right: 40px;
+		&:nth-child(2){
+			margin-right: 0;
+		}
+	}
+}
+.language-switcher{
+	a{
+		display: block;
+		padding: 11px 13px;
+		@include hover($white);
+	}
+	a.active{
+		background-color: $white;
+	}
+}
+
+
+.logo{
+	width: 145px;
+	height: 70px;
+	img{
+		max-width: 100%;
+	}
+}
+
+.header-bottom{
+	padding: 24px 0;
+	background-color: $white;
+	.inner{
+		justify-content: space-between;
+	}
+}
+.logo{
+	a{
+	font-family: $Menlo-Bold;
+	font-size: $logo;
+	color: $white;
+	padding: 0 14px;
+	width: 160px;
+	line-height: 100px;
+	// background-color: $red;
+	}
+}
+.menu{
+	margin-left: 40 px;
+	line-height: 83px;
+	ul{
+		display: flex;
+	}
+	li{
+		margin-left: 40px;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	a{
+		text-transform: uppercase;
+		font-family: $Lato-Semibold;
+		letter-spacing: 1px;
+		font-size: $big-text;
+		@include color($red);
+	}
+}
+.cabinet{
+	line-height: 80px;
+}
+.btn-cabinet{
+	a{
+		@include button-red;
+		@include hover($yellow);
+	}
+}

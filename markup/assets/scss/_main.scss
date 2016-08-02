@@ -1,0 +1,677 @@
+.main{
+	background-image: url("%=static=%general/main.jpg");
+	background-repeat: no-repeat;
+  background-size: 100%;
+	height: 480px;
+	position: relative;
+	padding-bottom: 0;
+}
+
+.main-head{
+	position: absolute;
+	top: 42%;
+	transform: translateY(-50%);
+
+	p{
+		font-family: $Lato-Black;
+		font-size: $large-text;
+		color: $text-p;
+		letter-spacing: 1px;
+	}
+}
+
+
+// TENDERS SECTION
+
+.main-btns{
+	display: flex;
+	margin-top: 60px;
+}
+
+.btn-take{
+	a{
+		@include button-red;
+		@include hover($yellow);
+	}
+}
+
+.btn-create{
+	margin-left: 11px;
+	a{
+		@include button-white;
+		padding: 16px 36px 17px;
+		&:hover{
+			background-color: $red;
+			color: #fff;
+			transition: all .35s ease;
+		}
+	}
+}
+
+.search-tenders{
+	.section-head{
+		@include section-head($red, $text);
+	}
+}
+.tenders-form{
+	display: flex;
+	margin-top: 55px;
+	justify-content: space-between;
+}
+.find-tender-btn{
+	margin-left: 20px;
+	button{
+		@include button-red-icon;
+		border: none;
+		position: relative;
+		@include hover($yellow);
+		&:before{
+			content: '';
+			position: absolute;
+	    top: 50%;
+    	transform: translateY(-50%);
+    	left: 22px;
+			@include bg($search);
+		}
+	}
+}
+.filter{
+	display: flex;
+}
+.location, .dkpp, .cpv, .money, .calendar{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	margin-left: 	20px;
+	border-top: 2px solid $block-bg;
+	border-bottom: 2px solid $block-bg;
+	&:hover{
+		background-color: $block-bg;
+	}
+	a{
+			width: 65px;
+		display: block;
+		margin: 0 auto;
+		font-family: $Lato-Black;
+		color: $text-p;
+	}
+}
+.location, .money, .calendar{
+	position: relative;
+	width: 65px;
+	a{
+		position: relative;
+		margin-left: 10px;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -30px;
+		@include bg($dropdown);
+	}
+}
+}
+.location:hover, .money:hover, .calendar:hover{
+	a{
+	&:before{
+		@include bg($button-red);
+	}
+}
+}
+.location{
+	a{
+		@include bg($location);
+		// background-position: -219px -54px;
+		// width: 65px;
+		// margin-right: 35px;
+	}
+}
+.money{
+	a{
+		@include bg($money);
+		// background-position: -219px -27px;
+		// background-size: 248px, 226px;
+		// width: 65px;
+		// margin-right: 35px;
+	}
+}
+.calendar{
+	a{
+		@include bg($calendar);
+		// width: 65px;
+		// background-position: -223px -27px;
+		// margin-right: 35px;
+	}
+}
+.tender-input{
+	::-webkit-input-placeholder {color: $text-p;
+	font-family: $Lato-Semibold }
+	::-moz-placeholder          {color: $text-p;
+		font-family: $Lato-Semibold }/* Firefox 19+ */
+	:-moz-placeholder           {color: $text-p;
+		font-family: $Lato-Semibold }/* Firefox 18- */
+	:-ms-input-placeholder      {color: $text-p;
+	font-family: $Lato-Semibold }
+	input{
+    width: 515px;
+    padding: 19px 0 17px 30px;
+    box-sizing: border-box;
+    border: none;
+    background-color: $block-bg;
+	}
+}
+.tenders{
+	background-color: $section-bg;
+	.section-head{
+		@include section-head($text-bold, $text);
+	}
+}
+
+.square-view{
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-right: 18px;
+	@include bg($squares);
+}
+
+.lines-view{
+	width: 30px;
+	height: 22px;
+	display: block;
+	@include bg($lines);
+}
+
+.tenders-sort{
+	display: flex;
+	justify-content: space-between;
+	padding: 9px 19px;
+	background-color: $white;
+	margin-top: 37px;
+}
+
+.types{
+	display: flex;
+}
+
+.view, .view ul{
+	display: flex;
+	align-items: center;
+}
+
+.goverments, .comercial, .all{
+	a{
+		@include button-grey;
+		@include hover(#c2cfd1);
+	}
+}
+
+.all a.active{
+	background-color: $red;
+	color: $white;
+}
+.goverments, .comercial{
+	margin-left: 10px;
+}
+
+.tender{
+	max-width: 270px;
+	padding: 45px 19px 24px;
+	background-color: $white;
+	margin-top: 30px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.tender-bookmark{
+	a{
+		position: absolute;
+		top: 0;
+		@include bg($bookmark);
+		&:hover{
+			@include bg($bookmark_active);
+		}
+	}
+	a.active{
+		@include bg($bookmark_active);
+	}
+}
+
+.tender-head{
+	padding-bottom: 20px;
+	border-bottom: 3px solid $borders;
+	a{
+		color: $text-bold;
+		letter-spacing: 1px;
+	}
+	p{
+		font-family: $Lato-Bold;
+		font-size: 12px;
+		a{
+			color: $red;
+		}
+	}
+}
+
+.customer{
+	display: flex;
+	margin-top: 20px;
+}
+
+.customer-name{
+	margin-left: 13px;
+	a{
+		color: $red;
+		letter-spacing: 0;
+	}
+}
+
+.tender-price{
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid $borders;
+	span{
+		font-size: 12px;
+		color: $text;
+	}
+}
+
+.price{
+	font-family: $Lato-Black;
+	font-size: $large-text;
+	color: $text-bold;
+}
+
+.progress-bar{
+	margin-top: 20px;
+}
+
+progress {
+	width: 100%;
+	height: 9px;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+}
+
+progress::-webkit-progress-bar {
+	background: #dee8ea;
+	border-radius: 50px;
+	border: none;
+}
+
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	height: 9px;
+	background: $yellow;
+	border: none;
+
+}
+.tender-btn{
+	text-align: center;
+	margin-top: 35px;
+    padding-bottom: 13px;
+	a{
+		@include button-white;
+		@include hover-color($red, $white);
+	}
+}
+
+.all-tenders{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.tender{
+	margin-left: 30px;
+	&:first-child{
+		margin-left: 0;
+	}
+	&:nth-child(4n+1){
+		margin-left: 0;
+	}
+}
+
+.more-tenders{
+    text-align: center;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: 50px;
+	a{
+		@include button-red-icon;
+		position: relative;
+		@include hover($yellow);
+		&:before{
+			content: '';
+			position: absolute;
+			top: 14px;
+			left: 24px	;
+			@include bg($load);  
+		}
+	}
+}
+
+
+
+// ADVANTAGES SECTION
+
+
+.advantages{
+	background-color: $white;
+	.section-head{
+		@include section-head($text-bold, $text);
+	}
+}
+.advantages-items{
+	display: flex;
+	justify-content: space-around;
+	max-width: 870px;
+	margin: 45px auto 0;
+}
+.advantage-item{
+	text-align: center;
+}
+.advantage-text{
+	box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.15);
+	h3{
+		font-family: $Lato-Black;
+	}
+	p{
+		margin-top: 5px;
+		// font-family: 
+	}
+}
+.advantage-img{
+	height: 190px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.15);
+
+    img{
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+    }
+}
+.advantage-text{
+	padding: 0 24px;
+    box-sizing: border-box;
+    height: 85px;
+    margin-top: 30px;
+    display: flex;
+    vertical-align: bottom;
+    align-items: center;
+    position: relative;
+
+    &:before{
+	    content: '';
+	    position: absolute;
+	    width: 0;
+	    left: 50%;
+	    height: 0;
+	    transform: translateX(-50%);
+	    top: -14px;
+	    // border-left: 15px solid transparent;
+	    // border-right: 15px solid transparent;
+	    // border-bottom: 15px solid #fff;
+	    // box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+// END OF ADVANTAGES
+
+
+
+
+// SECTION WORK 
+
+
+.work{
+	background-color: $dark-bg;
+	padding-bottom: 0;
+
+	.section-head{
+		@include section-head($white, $block-bg);
+	}
+}
+
+.videos-block{
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0;
+}
+
+.pdf-blocks{
+	position: relative;
+	background-color: $pdf-block;
+	padding: 50px 0;
+		&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 15px solid $dark-bg;
+	}
+	ul{
+		display: flex;
+		justify-content: space-around;
+	}
+	li{
+		text-align: center;
+	}
+	a{
+		color: $white;
+		font-size: $big-text;
+		@include color($yellow);
+	}
+}
+.pdf-blocks{
+.btn-pdf{
+	margin-top: 40px;
+	a{
+		display: block;
+		width: 180px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 15px 0;
+		border: 2px solid $white;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		border-radius: 5px;
+		font-size: $normal-text;
+		font-family: $Lato-Bold;
+		@include hover-color($red, $white);
+	}
+}
+}
+
+
+// APP
+
+.app{
+	.section-head{
+		@include section-head($text-bold, $text);
+	}
+}
+.app-advantages{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 80px;
+	ul{
+		margin-top: 45px;
+	}
+	li{
+		margin-top: 100px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+}
+.app-2{
+	width: 287px;
+	height: 571px;
+	background-image: url("%=static=%general/iphone.png");
+	background-repeat: no-repeat;
+	position: relative;
+	a{
+    position: absolute;
+    bottom: 150px;
+    left: 48%;
+    transform: translateX(-50%);
+	}
+}
+.app-1, .app-3{
+	li{
+		display: flex;
+	}
+}
+.app-text{
+	line-height: 68px;
+	min-width: 165px;
+	text-align: right;
+}
+.app-image{
+	width: 70px;
+	margin-left: 20px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	img{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.app-3{
+	.app-image{
+		margin-left: 0;
+	}
+	.app-text{
+		text-align: left;
+		margin-left: 20px;
+	}
+}
+
+
+// END OF APP
+
+
+// CLIENTS
+
+.clients{
+	background-color: $section-bg;
+	.section-head{
+		@include section-head($text-bold, $text);
+	}
+}
+.slider{
+	max-width: 950px;
+	margin: 35px auto 0;
+}
+.slide{
+	img{
+		transition: all .35s ease;
+	&:hover{
+		box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.15);
+	}
+}
+}
+
+
+// SLIDER
+.owl-item{
+	text-align: center;
+}
+.owl-theme .owl-controls .owl-buttons div{
+	color: transparent;
+}
+.owl-prev, .owl-next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	
+}
+.owl-prev{
+	left: -90px;
+	@include bg($arrow-left);
+	transition: background-image .35s ease;
+	&:hover{
+		@include bg($arrow-left-hover);
+	}
+}
+.owl-next{
+	right: -90px;
+	@include bg($arrow-right);
+	&:hover{
+		@include bg($arrow-right-hover);
+	}
+}
+
+
+
+// FORM
+
+.callback{
+	input, textarea{
+		width: 100%;
+		max-width: 370px;
+		border: none;
+		border-bottom: 2px solid $block-bg;
+		font-family: $Lato-Semibold;
+		color: $text-p;
+		padding-bottom: 14px;
+		transition: border-bottom .35s ease;
+		&:hover, &:focus{
+			border-bottom: 2px solid $red;
+		}
+	}
+	textarea{
+		padding-bottom: 0;
+	}
+}
+
+
+
+// CALLBACK SECTION
+
+.callback{
+	::-webkit-input-placeholder {color: $text-p;
+	font-family: $Lato-Semibold }
+	::-moz-placeholder          {color: $text-p;
+		font-family: $Lato-Semibold }/* Firefox 19+ */
+	:-moz-placeholder           {color: $text-p;
+		font-family: $Lato-Semibold }/* Firefox 18- */
+	:-ms-input-placeholder      {color: $text-p;
+	font-family: $Lato-Semibold }
+	.section-head{
+		margin-bottom: 50px;
+		@include section-head($text-bold, $text);
+	}
+}
+.callback-form{
+	text-align: center;
+	margin-top: 30px;
+}
+.name, .email, .comment{
+	margin-top: 30px;
+}
+
+.form-submit{
+	margin-top: 40px;
+	button{
+		@include button-red;
+		border: none;
+		@include hover($yellow);
+	}
+}

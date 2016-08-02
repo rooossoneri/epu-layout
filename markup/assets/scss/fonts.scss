@@ -1,0 +1,71 @@
+/* Your custom fonts here */
+
+/* Example
+
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+
+@font-face {
+    font-family: 'MyriadPro-BoldCond';
+    src: url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.eot');
+    src: url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.woff') format('woff'),
+         url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.svg#custom_font') format('svg');
+    // font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+
+@font-face {
+    font-family: 'Menlo-Bold';
+    src: url('../fonts/Menlo-Bold/Menlo-Bold.eot');
+    src: url('../fonts/Menlo-Bold/Menlo-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Menlo-Bold/Menlo-Bold.woff') format('woff'),
+         url('../fonts/Menlo-Bold/Menlo-Bold.svg#custom_font') format('svg');
+    // font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'Lato-Semibold';
+    src: url('../fonts/Lato-Semibold/Lato-Semibold.eot');
+    src: url('../fonts/Lato-Semibold/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Semibold/Lato-Semibold.woff') format('woff'),
+         url('../fonts/Lato-Semibold/Lato-Semibold.svg#custom_font') format('svg');
+    // font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/Lato-Black/Lato-Black.eot');
+    src: url('../fonts/Lato-Black/Lato-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Black/Lato-Black.woff') format('woff'),
+         url('../fonts/Lato-Black/Lato-Black.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Regular/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular/Lato-Regular.svg#custom_font') format('svg');
+    // font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bold/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato-Bold/Lato-Bold.svg#custom_font') format('svg');
+    // font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}

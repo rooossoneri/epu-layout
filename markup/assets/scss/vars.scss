@@ -1,0 +1,60 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+
+
+
+
+// COLORS
+
+$red: #c1121c;
+$text: #86949b;
+$text-bold: #3a4247;
+$yellow: #fcbc33;
+$white: #fff;
+$section-bg: #f5f8f9;
+$block-bg: #dee8ea;
+$hover-grey: #c2cfd1;
+$text-p: #505a60;
+$borders: #f8fafb;
+$dark-bg: #2e3033;
+$pdf-block: #383a3d;
+$cab-text: #515b61;
+$green: #82ca9c;
+
+
+$cabinet: #1d1f27;
+$cabinet-light: #262832;
+
+
+// PADDINGS AND MARGINS
+
+$section-pd: 50px 0;
+$button-bd: 15px 32px;
+$lp: 1.5px;
+$border: 2px;
+
+
+// FONTS size
+	// headers
+$logo: 73.34px;
+$h1: 42px;
+$h2: 36px;
+$h3: 16px;
+$h6: 11px;
+
+	// text
+$small-text: 12px;	
+$normal-text: 14px;
+$big-text: 16px;
+$large-text: 18px;
+
+
+// FONTS TYPES
+
+$MyriadPro-BoldCond: 'MyriadPro-BoldCond', Helvetica, Arial, sans-serif;
+$Menlo-Bold: 'Menlo-Bold', Helvetica, Arial, sans-serif;
+$Lato-Semibold: 'Lato-Semibold', Helvetica, Arial, sans-serif;
+$Lato-Black: 'Lato-Black', Helvetica, Arial, sans-serif;
+$Lato-Regular: 'Lato-Regular', Helvetica, Arial, sans-serif;
+$Lato-Bold: 'Lato-Bold', Helvetica, Arial, sans-serif;
