@@ -33,7 +33,7 @@ header{
 		color: $text-bold;
 		font-family: $Lato-Black;
 		font-size: $large-text;
-		@include color($red);
+		@include color($red1);
 	}
 	li{
 		margin-right: 40px;
@@ -77,7 +77,7 @@ header{
 	padding: 0 14px;
 	width: 160px;
 	line-height: 100px;
-	// background-color: $red;
+	// background-color: $red1;
 	}
 }
 .menu{
@@ -97,7 +97,7 @@ header{
 		font-family: $Lato-Semibold;
 		letter-spacing: 1px;
 		font-size: $big-text;
-		@include color($red);
+		@include color($red1);
 	}
 }
 .cabinet{

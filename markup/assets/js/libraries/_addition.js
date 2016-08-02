@@ -137,3 +137,7 @@ $(document).ready(function(){
     $(this).addClass("active");
 });
 });
+
+$(document).ready(function() {
+    $('select').material_select();
+  });

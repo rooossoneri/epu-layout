@@ -3,7 +3,7 @@
 	font-family: $Lato-Semibold;
   letter-spacing: 1px;
   padding: 18px 36px;
-  background-color: $red;
+  background-color: $red1;
   text-transform: uppercase;
   color: $white;
   border-radius: 5px;
@@ -15,7 +15,7 @@
 
 .btn-red-icon{
 	padding: 18px 36px 18px 56px;
-  background-color: $red;
+  background-color: $red1;
   text-transform: uppercase;
   color: $white;
   position: relative;
@@ -27,15 +27,15 @@
 }
 
 .btn-white{
-	color: $red;
+	color: $red1;
   padding: 15px 32px;
   text-transform: uppercase;
-  border: 2px solid $red;
+  border: 2px solid $red1;
   border-radius: 5px;
   background-color: $white;
   font-family: $Lato-Bold;
   &:hover{
-      background-color: $red;
+      background-color: $red1;
       color: $white;
       transition: all .35s ease;
   }
@@ -91,7 +91,7 @@
 
 .search-tenders{
 	.section-head{
-		@include section-head($red, $text);
+		@include section-head($red1, $text);
 	}
 }
 .tenders-form{
@@ -248,7 +248,7 @@
 }
 
 .all a.active{
-	background-color: $red;
+	background-color: $red1;
 	color: $white;
 }
 .goverments, .comercial{
@@ -289,7 +289,7 @@
 		font-family: $Lato-Bold;
 		font-size: 12px;
 		a{
-			color: $red;
+			color: $red1;
 		}
 	}
 }
@@ -302,7 +302,7 @@
 .customer-name{
 	margin-left: 13px;
 	a{
-		color: $red;
+		color: $red1;
 		letter-spacing: 0;
 	}
 }
@@ -523,7 +523,7 @@ progress::-webkit-progress-value {
 		border-radius: 5px;
 		font-size: $normal-text;
 		font-family: $Lato-Bold;
-		@include hover-color($red, $white);
+		@include hover-color($red1, $white);
 	}
 }
 }
@@ -670,7 +670,7 @@ progress::-webkit-progress-value {
 		padding-bottom: 14px;
 		transition: border-bottom .35s ease;
 		&:hover, &:focus{
-			border-bottom: 2px solid $red;
+			border-bottom: 2px solid $red1;
 		}
 	}
 	textarea{

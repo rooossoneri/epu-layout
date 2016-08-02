@@ -154,7 +154,7 @@ input:checked:after{
 }
 
 .popup-btns{
-	display: flex;	
+	display: flex;
 	padding: 20px;
 }
 .choose{
@@ -338,7 +338,7 @@ width: 10px; }
 		box-sizing: border-box;
 		transition: border-bottom .35s ease;
 		&:hover, &:focus{
-			border-bottom: 2px solid $red;
+			border-bottom: 2px solid $red1;
 		}
 	}
 }
@@ -385,7 +385,7 @@ width: 10px; }
 	color: #505a60;
 	font-family: $Lato-Semibold;
 	a{
-		color: $red;
+		color: $red1;
 	}
 }
 .rules{
@@ -450,7 +450,7 @@ width: 10px; }
 		display: block;
 		padding: 20px;
 		box-sizing: border-box;
-		color: $red;
+		color: $red1;
 		font-family: $Lato-Bold;
 		transition: background-color .35s linear;
 		// transition: color .25s linear;
@@ -469,8 +469,8 @@ width: 10px; }
 	text-align: center;
 	margin-top: 10px;
 	a{
-		color: $red;
-		border-bottom: 1px solid $red;
+		color: $red1;
+		border-bottom: 1px solid $red1;
 		font-family: $Lato-Semibold;
 	}
 }

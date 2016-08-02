@@ -50,6 +50,7 @@
 					Общая информация
 				</div>
 				<div class="properties-all">
+					<form action="submit">
 				<div class="properties-radio">
 					<div class="radio-customer">
 						<input type="radio" value="Заказчик" name="customer">
@@ -61,23 +62,26 @@
 						<label for="customer">Поставщик</label>
 					</div>
 				</div>
-				<div class="common-inputs">
+				<div class="common-inputs input-field">
 					<div class="company-name-prop">
-						<input type="text" placeholder="Название компании">
+						<input type="text" id="company-name1">
+						<label for="company-name1">Название компании</label>
 					</div>
-					<div class="company-name-eng">
-						<input type="text" placeholder="Название на англиском">
+					<div class="company-name-eng input-field">
+						<input type="text" id="company-name-eng">
+						<label for="company-name-eng">Название на англиском</label>
 					</div>
-					<div class="company-form">
-						<select name="form-type" id="">
+					<div class="company-form input-field" >
+						<select>
 							<option value="" disabled="" selected>Форма собственности</option>
 							<option value="">FOP</option>
 							<option value="">FOP</option>
 							<option value="">FOP</option>
 						</select>
 					</div>
-					<div class="company-code">
-						<input type="text" placeholder="Код ЕДРПОУ">
+					<div class="company-code input-field">
+						<input type="text" id="code-edr">
+						<label for="code-edr">Код ЕДРПОУ</label>
 					</div>
 					<div class="company-type">
 						<select name="form-type" id="">
@@ -94,6 +98,7 @@
 						</div>
 					</div>
 					</div>
+					</form>
 				</div>
 				</div>
 				<div class="right-wrap">
@@ -101,20 +106,23 @@
 						<div class="properties-head">
 							Общая информация
 						</div>
-						<div class="properties-all">
-							<div class="company-contact-name">
-									<input type="text" placeholder="Имя">
+						<div class="properties-all no-m">
+							<div class="company-contact-name input-field">
+									<input type="text" id="name1">
+									<label for="name1">Имя</label>
 							</div>
-							<div class="company-contact-surname">
-								<input type="text" placeholder="Фамилия">
+							<div class="company-contact-surname input-field">
+								<input type="text" id="surname">
+								<label for="surname">Фамилия</label>
 							</div>
-							<div class="company-contact-position">
-								<input type="text" placeholder="Должность">
+							<div class="company-contact-position input-field">
+								<input type="text" id="vacancy">
+								<label for="vacancy">Должность</label>
 							</div>
 							<div class="company-contact-phone">
 								<input type="number" placeholder="+380 (__) ___ - __ - __">
 							</div>
-							<div class="company-form">
+							<div class="company-form input-field">
 								<select name="form-type" id="">
 									<option value="" disabled="" selected>Форма собственности</option>
 									<option value="">FOP</option>
@@ -128,8 +136,8 @@
 						<div class="properties-head">
 							Расположение компании
 						</div>
-						<div class="properties-all">
-							<div class="company-form1">
+						<div class="properties-all no-m">
+							<div class="company-form1 input-field">
 								<select name="form-type" id="">
 									<option value="" disabled="" selected>Область</option>
 									<option value="">FOP</option>
@@ -138,15 +146,18 @@
 								</select>
 							</div>
 							<div class="company-contact-city">
-								<div class="city1">
-									<input type="text" placeholder="Населенный пункт">
+								<div class="city1 input-field">
+									<input type="text" id="city">
+									<label for="city">Населенный пункт</label>
 								</div>
-								<div class="index">
-									<input type="text" placeholder="Индекс">
+								<div class="index input-field">
+									<input type="text" id="index">
+									<label for="index">Индекс</label>
 								</div>
 							</div>
-							<div class="company-contact-phone">
-								<input type="text" placeholder="Адрес компании">
+							<div class="company-contact-phone input-field">
+								<input type="text" id="company-address">
+								<label for="company-address">Адрес компании</label>
 							</div>
 						</div>
 					</div>
