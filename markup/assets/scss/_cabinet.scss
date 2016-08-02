@@ -11,6 +11,11 @@
 	padding-bottom: 150px;
 }
 
+.cabinets .logo{
+	width: 110px;
+	height: 80px;
+}
+
 .profile{
 	display: flex;
 	padding: 22px;
@@ -41,7 +46,7 @@
 		text-transform: uppercase;
 		color: #a3a5a8;
 		position: relative;
-		transition: background-color .35s ease;
+		transition: all .35s ease;
 		&:before{
 			content: '';
 			position: absolute;
@@ -57,6 +62,7 @@
 		&:hover{
 			background-color: $red;
 			color: $white;
+			border-bottom: 3px solid $red;
 		}
 	}
 	a.active{
@@ -64,19 +70,40 @@
 		color: $white;
 	}
 }
-.profile-icon.active{
+
+.profile-icon:hover,.profile-icon.active{
 	&:before{
 		@include bg($profile-icon);
 	}
 }
+
+.profile-icon{
+	&:before{
+		@include bg($profile-icon-red);
+	}
+}
+
 .company-icon{
 	&:before{
 		@include bg($company);
 	}
 }
+
+.company-icon:hover, .profile-icon.active{
+	&:before{
+		@include bg($companies-hover);
+	}
+}
+
 .purchase-icon{
 	&:before{
 		@include bg($purchase);
+	}
+}
+
+.purchase-icon:hover, .purchase-icon.active{
+	&:before{
+		@include bg($cart-hover);
 	}
 }
 
@@ -86,9 +113,21 @@
 	}
 }
 
+.tenders-icon:hover, .tenders-icon.active{
+	&:before{
+		@include bg($paper-hover);
+	}
+}
+
 .notify-icon{
 	&:before{
 		@include bg($bell);
+	}
+}
+
+.notify-icon:hover, .notify-icon.active{
+	&:before{
+		@include bg($bell-hover);
 	}
 }
 
@@ -98,7 +137,11 @@
 	}
 }
 
-
+.settings-icon:hover, .settings-icon.active{
+	&:before{
+		@include bg($settings-hover);
+	}
+}
 
 .cabinets{
 	background-color: #f5f8f9;
@@ -360,7 +403,7 @@
 	font-family: $Lato-Semibold;
 	font-size: 12px;
 	text-transform: uppercase;
-	color: $text;	
+	color: $text;
 }
 .properties-all{
 	padding: 20px 30px 100px;
@@ -385,7 +428,7 @@
 	}
 	::-webkit-input-placeholder {
 		color: #505a60;
-		font-family: $Lato-Semibold; 
+		font-family: $Lato-Semibold;
 	}
 	::-moz-placeholder{
 		color: #505a60;
@@ -393,11 +436,11 @@
 	 }/* Firefox 19+ */
 	:-moz-placeholder{
 		color: #505a60;
-		font-family: $Lato-Semibold; 
+		font-family: $Lato-Semibold;
 		}/* Firefox 18- */
 	:-ms-input-placeholder{
 		color: #505a60;
-		font-family: $Lato-Semibold; 
+		font-family: $Lato-Semibold;
 	}
 
 .radio-customer, .radio-provider{
@@ -711,7 +754,7 @@
 	width: 60%;
 }
 .excepted-currency{
-	width: 28%;	
+	width: 28%;
 }
 .purchase{
 	display: flex;
@@ -759,7 +802,7 @@
 .cabinets{
 	.tender{
 		margin-left: 21px;
-		max-width: 260px;	
+		max-width: 260px;
 	}
 }
 
