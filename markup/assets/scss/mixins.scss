@@ -30,43 +30,43 @@
 
 // BUTTONS
 
-@mixin button-red-icon{
-    padding: 18px 36px 18px 56px;
-    background-color: $red;
-    text-transform: uppercase;
-    color: $white;
-    position: relative;
-    border-radius: 5px;
-}
-@mixin button-red{
-    font-family: $Lato-Semibold;
-    letter-spacing: 1px;
-    padding: 18px 36px;
-    background-color: $red;
-    text-transform: uppercase;
-    color: $white;
-    border-radius: 5px;
-}
-@mixin button-white{
-    color: $red;
-    padding: 15px 32px;
-    text-transform: uppercase;
-    border: 2px solid $red;
-    border-radius: 5px;
-    background-color: $white;
-    font-family: $Lato-Bold;
-}
+// @mixin button-red-icon{
+//     padding: 18px 36px 18px 56px;
+//     background-color: $red;
+//     text-transform: uppercase;
+//     color: $white;
+//     position: relative;
+//     border-radius: 5px;
+// }
+// @mixin button-red{
+//     font-family: $Lato-Semibold;
+//     letter-spacing: 1px;
+//     padding: 18px 36px;
+//     background-color: $red;
+//     text-transform: uppercase;
+//     color: $white;
+//     border-radius: 5px;
+// }
+// @mixin button-white{
+//     color: $red;
+//     padding: 15px 32px;
+//     text-transform: uppercase;
+//     border: 2px solid $red;
+//     border-radius: 5px;
+//     background-color: $white;
+//     font-family: $Lato-Bold;
+// }
 
-@mixin button-grey{
-    font-family: $Lato-Semibold;
-    font-size: $small-text;
-    color: $text-bold;
-    padding: 12px 23px;
-    background-color: $block-bg;
-    border-radius: 19px;
-    letter-spacing: 1px;
-    display: block;
-}
+// @mixin button-grey{
+//     font-family: $Lato-Semibold;
+//     font-size: $small-text;
+//     color: $text-bold;
+//     padding: 12px 23px;
+//     background-color: $block-bg;
+//     border-radius: 19px;
+//     letter-spacing: 1px;
+//     display: block;
+// }
 
 
 // END BUTTONS

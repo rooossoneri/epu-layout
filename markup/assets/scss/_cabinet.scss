@@ -68,6 +68,7 @@
 	a.active{
 		background-color: $red;
 		color: $white;
+		border-bottom: 3px solid $red;
 	}
 }
 
@@ -966,7 +967,7 @@
 	font-family: $Lato-Semibold;
 }
 
-.section-head{
+.section-heads{
 	font-family: $Lato-Semibold;
 	font-size: 12px;
 	text-transform: uppercase;

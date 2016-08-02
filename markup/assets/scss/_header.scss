@@ -103,9 +103,3 @@ header{
 .cabinet{
 	line-height: 80px;
 }
-.btn-cabinet{
-	a{
-		@include button-red;
-		@include hover($yellow);
-	}
-}

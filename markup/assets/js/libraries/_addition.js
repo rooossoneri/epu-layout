@@ -126,5 +126,14 @@ $('.reg-dropdown').on('click', function(){
     $('.hidden-types').removeClass('active');
   else
     $('.hidden-types').addClass('active');
-  
+});
+
+
+// ACTIVE ON SIDEBAR MENU
+
+$(document).ready(function(){
+  $('.sidebar-menu ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
 });

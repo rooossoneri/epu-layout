@@ -1,3 +1,57 @@
+// ALL BUTTONS
+.btn-red{
+	font-family: $Lato-Semibold;
+  letter-spacing: 1px;
+  padding: 18px 36px;
+  background-color: $red;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+ 	&:hover{
+    background-color: $yellow;
+    transition: background-color .35s ease;
+    }
+}
+
+.btn-red-icon{
+	padding: 18px 36px 18px 56px;
+  background-color: $red;
+  text-transform: uppercase;
+  color: $white;
+  position: relative;
+  border-radius: 5px;
+  &:hover{
+  	background-color: $yellow;
+    transition: background-color .35s ease;
+  }
+}
+
+.btn-white{
+	color: $red;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  border: 2px solid $red;
+  border-radius: 5px;
+  background-color: $white;
+  font-family: $Lato-Bold;
+  &:hover{
+      background-color: $red;
+      color: $white;
+      transition: all .35s ease;
+  }
+}
+
+.btn-grey{
+	font-family: $Lato-Semibold;
+  font-size: $small-text;
+  color: $text-bold;
+  padding: 12px 23px;
+  background-color: $block-bg;
+  border-radius: 19px;
+  letter-spacing: 1px;
+  display: block;
+}
+
 .main{
 	background-image: url("%=static=%general/main.jpg");
 	background-repeat: no-repeat;
@@ -28,23 +82,10 @@
 	margin-top: 60px;
 }
 
-.btn-take{
-	a{
-		@include button-red;
-		@include hover($yellow);
-	}
-}
-
 .btn-create{
 	margin-left: 11px;
 	a{
-		@include button-white;
 		padding: 16px 36px 17px;
-		&:hover{
-			background-color: $red;
-			color: #fff;
-			transition: all .35s ease;
-		}
 	}
 }
 
@@ -61,7 +102,6 @@
 .find-tender-btn{
 	margin-left: 20px;
 	button{
-		@include button-red-icon;
 		border: none;
 		position: relative;
 		@include hover($yellow);
@@ -314,8 +354,7 @@ progress::-webkit-progress-value {
 	margin-top: 35px;
     padding-bottom: 13px;
 	a{
-		@include button-white;
-		@include hover-color($red, $white);
+
 	}
 }
 
@@ -340,15 +379,13 @@ progress::-webkit-progress-value {
     margin: 0 auto;
     margin-top: 50px;
 	a{
-		@include button-red-icon;
 		position: relative;
-		@include hover($yellow);
 		&:before{
 			content: '';
 			position: absolute;
 			top: 14px;
 			left: 24px	;
-			@include bg($load);  
+			@include bg($load);
 		}
 	}
 }
@@ -670,8 +707,6 @@ progress::-webkit-progress-value {
 .form-submit{
 	margin-top: 40px;
 	button{
-		@include button-red;
 		border: none;
-		@include hover($yellow);
 	}
 }
