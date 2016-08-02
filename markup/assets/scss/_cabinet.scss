@@ -1,5 +1,5 @@
 
-// USER 
+// USER
 
 .sidebar{
 	width: 270px;
@@ -57,7 +57,7 @@
 		&:hover{
 			background-color: $red;
 			color: $white;
-		}	
+		}
 	}
 	a.active{
 		background-color: $red;
@@ -67,7 +67,7 @@
 .profile-icon.active{
 	&:before{
 		@include bg($profile-icon);
-	}	
+	}
 }
 .company-icon{
 	&:before{
@@ -864,6 +864,7 @@
   padding: 20px;
   background-color: #fff;
   font-size: 18px;
+  color: #515b61;
 }
 
 .notify-messages{
