@@ -71,46 +71,7 @@ jQuery(function(){
   timepicker:false
  });
 });
-// $('.login').on('click', function() { 
-//   $('.auth-popup').each(function() { 
-//     if($(this).hasClass('active')) { 
-//         $(this).removeClass('active');
-//     } else { 
-//         $(this).addClass('active');
-//     }
-// });
-// });
 
-// $('.registration').on('click', function() {
-//   $('.first').replaceWith($('.second'));
-//   $('.second').addClass('active');
-// });
-
-// $('.registration').on('click', function() {
-//   // $('.first').replaceWith($('.second'));
-//   $('.second').addClass('active');
-//   $('.first').addClass('disable');
-// });
-// $('.login').on('click', function() {
-//   // $('.second').replaceWith($('.first'));
-//   $('.first').removeClass('disable').addClass('active');
-//   $('.second').addClass('disable');
-// });
-
-  // $('.log-btn').on('click', function(){
-  //   if ($('.first').hasClass('active')){
-  //     $('.second').addClass('disable');
-  //   }else{
-  //     $('.first').addClass('active');
-  //     $('.first').removeClass('disable');
-  //   }
-  //   if($('.second').hasClass('active')){
-  //     $('.first').addClass('disable');
-  //   }else{
-  //     $('.second').addClass('active');
-  //    $('.second').removeClass('disable');
-  //   }
-  // });
  $('.registration').on('click', function() {
   $('.first').hide();
   $('.second').show();

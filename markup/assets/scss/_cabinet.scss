@@ -648,7 +648,7 @@
 
 
 
-// CREATE PLAN 
+// CREATE PLAN
 
 .customer-info{
 	background-color: #fff;
@@ -663,11 +663,21 @@
 		text-transform: uppercase;
 	}
 }
-.customer-info-inputs{
+.customer-info-inputs form{
 	display: flex;
 	justify-content: space-between;
 	padding-top: 18px;
 }
+.top-inputs{
+	display: flex;
+	justify-content: space-between;
+}
+
+.customer-info-inputs2{
+	display: flex;
+	justify-content: space-between;
+}
+
 .cust-left, .cust-right{
 	width: 45%;
 	input{
@@ -680,7 +690,7 @@
 	margin-top: 20px;
 }
 .name-buy input, .procedure-type select{
-	margin-top: 0;
+	// margin-top: 0;
 }
 
 .products-list{
@@ -738,13 +748,17 @@
     // border-bottom: 1px solid $red;
 	}
 }
-.input-calendar{
+.calendar-wrap{
 	display: flex;
 	justify-content: space-between;
 }
 .calendar-center{
 	display: flex;
     align-items: flex-end;
+}
+.calendar-text{
+	font-family: $Lato-Semibold;
+	color: #505a60;
 }
 .calendar-left, .calendar-right{
 	width: 40%;

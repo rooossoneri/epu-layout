@@ -1,176 +1,175 @@
 <div class="cabinets">
-	<div class="sidebar">
-		<div class="profile">
-			<div class="profile-img">
-				<a href="#"><img src="%=static=%img/general/profile.png" alt=""></a>
-			</div>
-			<div class="profile-name">
-				<h3>Владислав Григоренков</h3>
-				<p>Поставщик</p>
-			</div>
-		</div>
-		<div class="sidebar-menu">
-			<nav>
-				<ul>
-					<li><a class="profile-icon active" href="cabinet.html">Профиль</a></li>
-					<li><a class="company-icon" href="companies.html">Компании</a></li>
-					<li><a class="purchase-icon" href="goverment-tenders.html">Закупки</a></li>
-					<li><a class="tenders-icon" href="cabinet-tenders.html">Тендеры</a></li>
-					<li><a class="notify-icon" href="notifications.html">уведомления</a></li>
-					<li><a class="settings-icon" href="settings.html">Настройки</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<div class="cabinet-inner">
-		<div class="cabinet-head">
-			<div class="cabinet-home">
-				<div class="home">
-					<a href="#"><img src="%=static=%img/general/home.png" alt=""></a>
-				</div>
-				<div class="notification">
-					<a href="#"><img src="%=static=%img/general/notify.png" alt=""></a>
-					<!-- <div class="notification-count">2</div> -->
-				</div>
-			</div>
-			<div class="logo">
-				<a href="#"><img src="%=static=%img/general/logo-main.png" alt=""></a>
-			</div>
-			<div class="cabinet-out">
-				<a href="#"><img src="%=static=%img/general/logout.png" alt=""></a>
-			</div>
-		</div>
-		<div class="create-head">
-			<a href="#">Назад</a>
-		</div>
-		<p class="create-company-head">создание новой компании</p>
-		<div class="company-create">
-			<div class="common-properties">
-				<div class="properties-head">
-					Общая информация
-				</div>
-				<div class="properties-all">
-					<form action="submit">
-				<div class="properties-radio">
-					<div class="radio-customer">
-						<input type="radio" value="Заказчик" name="customer">
-						<label for="customer">Заказчик</label>
-					</div>
-					<div class="radio-provider">
-						<input type="radio" value="Поставщик">
-						<div class="check"></div>
-						<label for="customer">Поставщик</label>
-					</div>
-				</div>
-				<div class="common-inputs input-field">
-					<div class="company-name-prop">
-						<input type="text" id="company-name1">
-						<label for="company-name1">Название компании</label>
-					</div>
-					<div class="company-name-eng input-field">
-						<input type="text" id="company-name-eng">
-						<label for="company-name-eng">Название на англиском</label>
-					</div>
-					<div class="company-form input-field" >
-						<select>
-							<option value="" disabled="" selected>Форма собственности</option>
-							<option value="">FOP</option>
-							<option value="">FOP</option>
-							<option value="">FOP</option>
-						</select>
-					</div>
-					<div class="company-code input-field">
-						<input type="text" id="code-edr">
-						<label for="code-edr">Код ЕДРПОУ</label>
-					</div>
-					<div class="company-type">
-						<select name="form-type" id="">
-							<option value="">FOP</option>
-							<option value="">FOP</option>
-							<option value="">FOP</option>
-							<option value="">FOP</option>
-						</select>
-					</div>
-					<div class="company-confirm">
-						<div class="check-confirm">
-							<input type="checkbox" name="confirm-check">
-							<label for="confirm-check">Это государственная компания</label>
-						</div>
-					</div>
-					</div>
-					</form>
-				</div>
-				</div>
-				<div class="right-wrap">
-					<div class="create-contacts">
-						<div class="properties-head">
-							Общая информация
-						</div>
-						<div class="properties-all no-m">
-							<div class="company-contact-name input-field">
-									<input type="text" id="name1">
-									<label for="name1">Имя</label>
-							</div>
-							<div class="company-contact-surname input-field">
-								<input type="text" id="surname">
-								<label for="surname">Фамилия</label>
-							</div>
-							<div class="company-contact-position input-field">
-								<input type="text" id="vacancy">
-								<label for="vacancy">Должность</label>
-							</div>
-							<div class="company-contact-phone">
-								<input type="number" placeholder="+380 (__) ___ - __ - __">
-							</div>
-							<div class="company-form input-field">
-								<select name="form-type" id="">
-									<option value="" disabled="" selected>Форма собственности</option>
-									<option value="">FOP</option>
-									<option value="">FOP</option>
-									<option value="">FOP</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="create-location">
-						<div class="properties-head">
-							Расположение компании
-						</div>
-						<div class="properties-all no-m">
-							<div class="company-form1 input-field">
-								<select name="form-type" id="">
-									<option value="" disabled="" selected>Область</option>
-									<option value="">FOP</option>
-									<option value="">FOP</option>
-									<option value="">FOP</option>
-								</select>
-							</div>
-							<div class="company-contact-city">
-								<div class="city1 input-field">
-									<input type="text" id="city">
-									<label for="city">Населенный пункт</label>
-								</div>
-								<div class="index input-field">
-									<input type="text" id="index">
-									<label for="index">Индекс</label>
-								</div>
-							</div>
-							<div class="company-contact-phone input-field">
-								<input type="text" id="company-address">
-								<label for="company-address">Адрес компании</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="create-btns">
-				<div class="btn-save">
-					<button>Сохранить компанию</button>
-				</div>
-				<div class="btn-cancel">
-					<a href="#">Отмена</a>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="sidebar">
+    <div class="profile">
+      <div class="profile-img">
+        <a href="#"><img src="%=static=%img/general/profile.png" alt=""></a>
+      </div>
+      <div class="profile-name">
+        <h3>Владислав Григоренков</h3>
+        <p>Поставщик</p>
+      </div>
+    </div>
+    <div class="sidebar-menu">
+      <nav>
+        <ul>
+          <li><a class="profile-icon active" href="cabinet.html">Профиль</a></li>
+          <li><a class="company-icon" href="companies.html">Компании</a></li>
+          <li><a class="purchase-icon" href="goverment-tenders.html">Закупки</a></li>
+          <li><a class="tenders-icon" href="cabinet-tenders.html">Тендеры</a></li>
+          <li><a class="notify-icon" href="notifications.html">уведомления</a></li>
+          <li><a class="settings-icon" href="settings.html">Настройки</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="cabinet-inner">
+    <div class="cabinet-head">
+      <div class="cabinet-home">
+        <div class="home">
+          <a href="#"><img src="%=static=%img/general/home.png" alt=""></a>
+        </div>
+        <div class="notification">
+          <a href="#"><img src="%=static=%img/general/notify.png" alt=""></a>
+          <!-- <div class="notification-count">2</div> -->
+        </div>
+      </div>
+      <div class="logo">
+        <a href="#"><img src="%=static=%img/general/logo-main.png" alt=""></a>
+      </div>
+      <div class="cabinet-out">
+        <a href="#"><img src="%=static=%img/general/logout.png" alt=""></a>
+      </div>
+    </div>
+    <div class="create-head">
+      <a href="#">Назад</a>
+    </div>
+    <p class="create-company-head">создание новой компании</p>
+    <div class="company-create">
+      <div class="common-properties">
+        <div class="properties-head">
+          Общая информация
+        </div>
+        <div class="properties-all">
+          <form action="submit">
+            <div class="properties-radio">
+              <div class="radio-customer">
+                <input type="radio" value="Заказчик" name="customer">
+                <label for="customer">Заказчик</label>
+              </div>
+              <div class="radio-provider">
+                <input type="radio" value="Поставщик">
+                <div class="check"></div>
+                <label for="customer">Поставщик</label>
+              </div>
+            </div>
+            <div class="common-inputs input-field">
+              <div class="company-name-prop">
+                <input type="text" id="company-name1">
+                <label for="company-name1">Название компании</label>
+              </div>
+              <div class="company-name-eng input-field">
+                <input type="text" id="company-name-eng">
+                <label for="company-name-eng">Название на англиском</label>
+              </div>
+              <div class="company-form input-field" >
+                <select>
+                  <option value="" disabled="" selected>Форма собственности</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                </select>
+              </div>
+              <div class="company-code input-field">
+                <input type="text" id="code-edr">
+                <label for="code-edr">Код ЕДРПОУ</label>
+              </div>
+              <div class="company-type">
+                <select name="form-type" id="">
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                  <option value="">FOP</option>
+                </select>
+              </div>
+              <div class="company-confirm">
+                <div class="check-confirm">
+                  <input type="checkbox" name="confirm-check">
+                  <label for="confirm-check">Это государственная компания</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="right-wrap">
+        <div class="create-contacts">
+          <div class="properties-head">
+            Общая информация
+          </div>
+          <div class="properties-all no-m">
+            <div class="company-contact-name input-field">
+              <input type="text" id="name1">
+              <label for="name1">Имя</label>
+            </div>
+            <div class="company-contact-surname input-field">
+              <input type="text" id="surname">
+              <label for="surname">Фамилия</label>
+            </div>
+            <div class="company-contact-position input-field">
+              <input type="text" id="vacancy">
+              <label for="vacancy">Должность</label>
+            </div>
+            <div class="company-contact-phone">
+              <input type="number" placeholder="+380 (__) ___ - __ - __">
+            </div>
+            <div class="company-form input-field">
+              <select name="form-type" id="">
+                <option value="" disabled="" selected>Форма собственности</option>
+                <option value="">FOP</option>
+                <option value="">FOP</option>
+                <option value="">FOP</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="create-location">
+          <div class="properties-head">
+            Расположение компании
+          </div>
+          <div class="properties-all no-m">
+            <div class="company-form1 input-field">
+              <select name="form-type" id="">
+                <option value="" disabled="" selected>Область</option>
+                <option value="">FOP</option>
+                <option value="">FOP</option>
+                <option value="">FOP</option>
+              </select>
+            </div>
+            <div class="company-contact-city">
+              <div class="city1 input-field">
+                <input type="text" id="city">
+                <label for="city">Населенный пункт</label>
+              </div>
+              <div class="index input-field">
+                <input type="text" id="index">
+                <label for="index">Индекс</label>
+              </div>
+            </div>
+            <div class="company-contact-phone input-field">
+              <input type="text" id="company-address">
+              <label for="company-address">Адрес компании</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="create-btns">
+      <div class="btn-save">
+        <button>Сохранить компанию</button>
+      </div>
+      <div class="btn-cancel">
+        <a href="#">Отмена</a>
+      </div>
+    </div>
+  </div>
 </div>
