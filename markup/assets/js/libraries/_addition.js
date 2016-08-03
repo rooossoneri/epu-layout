@@ -93,8 +93,8 @@ $('.reg-dropdown').on('click', function(){
 // ACTIVE ON SIDEBAR MENU
 
 $(document).ready(function(){
-  $('.sidebar-menu ul li a').click(function(){
-    $('li a').removeClass("active");
+  $('.sidebar-menu a').click(function(){
+    $('.sidebar-menu a').removeClass("active");
     $(this).addClass("active");
 });
 });

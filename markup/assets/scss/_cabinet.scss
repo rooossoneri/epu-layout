@@ -14,6 +14,8 @@
 .cabinets .logo{
 	width: 110px;
 	height: 80px;
+	display: flex;
+	align-items: flex-end;
 }
 
 .profile{
@@ -39,7 +41,7 @@
 	background-color: #262832;
 	a{
 		padding: 25px;
-		padding-left: 60px;
+		padding-left: 45px;
 		display: block;
 		border-bottom: 3px solid #24252f;
 		font-family: $Lato;
@@ -73,86 +75,128 @@
 	}
 }
 
-.profile-icon:hover,.profile-icon.active{
-	&:before{
-		@include bg($profile-icon);
-	}
+// .profile-icon:hover,.profile-icon.active{
+// 	&:before{
+// 		@include bg($profile-icon);
+// 	}
+// }
+
+// .profile-icon{
+// 	&:before{
+// 		@include bg($profile-icon-red);
+// 	}
+// }
+
+// .company-icon{
+// 	&:before{
+// 		@include bg($company);
+// 	}
+// }
+
+// .company-icon:hover, .profile-icon.active{
+// 	&:before{
+// 		@include bg($companies-hover);
+// 	}
+// }
+
+// .purchase-icon{
+// 	&:before{
+// 		@include bg($purchase);
+// 	}
+// }
+
+// .purchase-icon:hover, .purchase-icon.active{
+// 	&:before{
+// 		@include bg($cart-hover);
+// 	}
+// }
+
+// .tenders-icon{
+// 	&:before{
+// 		@include bg($tender);
+// 	}
+// }
+
+// .tenders-icon:hover, .tenders-icon.active{
+// 	&:before{
+// 		@include bg($paper-hover);
+// 	}
+// }
+
+// .notify-icon{
+// 	&:before{
+// 		@include bg($bell);
+// 	}
+// }
+
+// .notify-icon:hover, .notify-icon.active{
+// 	&:before{
+// 		@include bg($bell-hover);
+// 	}
+// }
+
+// .settings-icon{
+// 	&:before{
+// 		@include bg($settings);
+// 	}
+// }
+
+// .settings-icon:hover, .settings-icon.active{
+// 	&:before{
+// 		@include bg($settings-hover);
+// 	}
+// }
+
+.step1, .step2{
+	display: flex;
+	justify-content: space-between;
+	display: none;
 }
 
-.profile-icon{
-	&:before{
-		@include bg($profile-icon-red);
-	}
+.step2, .step3{
+	margin-top: 20px;
 }
 
-.company-icon{
-	&:before{
-		@include bg($company);
-	}
+.sidebar-menu i{
+	color: $red1;
+	margin-right: 15px;
+	font-size: 17px;
 }
 
-.company-icon:hover, .profile-icon.active{
-	&:before{
-		@include bg($companies-hover);
-	}
+.sidebar-menu a:hover i, .sidebar-menu a.active i{
+	color: #fff;
+	transition: color .35s ease;
 }
 
-.purchase-icon{
-	&:before{
-		@include bg($purchase);
-	}
-}
-
-.purchase-icon:hover, .purchase-icon.active{
-	&:before{
-		@include bg($cart-hover);
-	}
-}
-
-.tenders-icon{
-	&:before{
-		@include bg($tender);
-	}
-}
-
-.tenders-icon:hover, .tenders-icon.active{
-	&:before{
-		@include bg($paper-hover);
-	}
-}
-
-.notify-icon{
-	&:before{
-		@include bg($bell);
-	}
-}
-
-.notify-icon:hover, .notify-icon.active{
-	&:before{
-		@include bg($bell-hover);
-	}
-}
-
-.settings-icon{
-	&:before{
-		@include bg($settings);
-	}
-}
-
-.settings-icon:hover, .settings-icon.active{
-	&:before{
-		@include bg($settings-hover);
-	}
+.cabinet-wrap{
+	background-color: #d7dddf;
+	padding: 20px 0 50px;
 }
 
 .cabinets{
 	background-color: #f5f8f9;
-	padding: 20px 20px 40px;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
 }
 .cabinet-inner{
 	width: 1106px;
 	margin: 0 auto;
+	padding: 20px 20px 40px;
 }
+
+.home i, .notification i, .cabinet-out i{
+	color: $text-p;
+	font-size: 30px;
+}
+
+.cabinet-head a:hover i, .cabinet-head a.active i{
+	color: $red1;
+	transition: color .35s ease;
+}
+
+.notification i, .cabinet-out i{
+	font-size: 25px;
+}
+
 .home, .notification{
 	padding: 10px 0;
 	    display: flex;
@@ -424,7 +468,7 @@
 .cabinets{
 	display: flex;
 	width: 1420px;
-	margin: 20px auto;
+	margin: 0px auto;
 	input, select{
 		background: none;
 		border: none;
@@ -1198,4 +1242,92 @@ input.cmn-toggle-round:checked + label:after {
 .pass-back{
 	text-align: center;
 	margin-top: 10px;
+}
+
+
+.measure-wrap, .option-wrap{
+	border-bottom: 2px solid #f8fafb;
+	padding-bottom: 30px;
+}
+
+.measure-wrap > div, .option-wrap > div{
+	width: 50%;
+}
+
+.list-products{
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-products, .right-products, .part1, .part2{
+	width: 45%;
+}
+
+.excepted-value{
+	margin-bottom: 30px;
+}
+
+.all-lots{
+	margin-top: 30px;
+}
+
+.lot-wrap{
+	padding: 20px;
+	background-color: #f8fafb;
+}
+
+.lot-left, .lot-right{
+	width: 45%;
+}
+
+.parts-lot{
+	display: flex;
+	justify-content: space-between;
+}
+
+.lot-columns{
+	display: flex;
+	justify-content: space-between;
+}
+
+.all-lots{
+	input, select{
+    padding: 15px 0 15px 11px;
+    background-color: #fff;
+    margin-top: 0;
+	}
+	.select-wrapper input.select-dropdown{
+		background-color: #fff;
+		border-bottom: 1px solid #dee8ea;
+		height: 3.2rem;
+	}
+	.select-wrapper span.caret{
+		z-index: 1;
+		top: 17px;
+	}
+}
+
+.lot-center, .parts-lot{
+	margin-top: 30px;
+}
+
+.parts-lot.additional{
+	margin-top: 0;
+}
+
+.lots-full-width, .lot-full-left, .lot-full-right{
+	display: flex;
+	justify-content: space-between;
+}
+
+.lot-full-left, .lot-full-right{
+	width: 45%;
+}
+
+.lot-full-left > div, .lot-full-right > div{
+	width: 45%;
+}
+
+.lot-mt{
+	margin-top: 30px;
 }

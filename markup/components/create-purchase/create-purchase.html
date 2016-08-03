@@ -1,110 +1,73 @@
-<div class="cabinets">
-  <div class="sidebar">
-    <div class="profile">
-      <div class="profile-img">
-        <a href="#"><img src="%=static=%img/general/profile.png" alt=""></a>
-      </div>
-      <div class="profile-name">
-        <h3>Владислав Григоренков</h3>
-        <p>Поставщик</p>
-      </div>
-    </div>
-    <div class="sidebar-menu">
-      <nav>
-        <ul>
-          <li><a class="profile-icon active" href="cabinet.html">Профиль</a></li>
-          <li><a class="company-icon" href="companies.html">Компании</a></li>
-          <li><a class="purchase-icon" href="goverment-tenders.html">Закупки</a></li>
-          <li><a class="tenders-icon" href="cabinet-tenders.html">Тендеры</a></li>
-          <li><a class="notify-icon" href="notifications.html">уведомления</a></li>
-          <li><a class="settings-icon" href="settings.html">Настройки</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="cabinet-inner">
-    <div class="cabinet-head">
-      <div class="cabinet-home">
-        <div class="home">
-          <a href="#"><img src="%=static=%img/general/home.png" alt=""></a>
+<div class="cabinet-wrap">
+  <div class="cabinets">
+    <div class="sidebar">
+      <div class="profile">
+        <div class="profile-img">
+          <a href="#"><img src="%=static=%img/general/profile.png" alt=""></a>
         </div>
-        <div class="notification">
-          <a href="#"><img src="%=static=%img/general/notify.png" alt=""></a>
-          <!-- <div class="notification-count">2</div> -->
+        <div class="profile-name">
+          <h3>Владислав Григоренков</h3>
+          <p>Поставщик</p>
         </div>
       </div>
-      <div class="logo">
-        <a href="#"><img src="%=static=%img/general/logo-main.png" alt=""></a>
-      </div>
-      <div class="cabinet-out">
-        <a href="#"><img src="%=static=%img/general/logout.png" alt=""></a>
+      <div class="sidebar-menu">
+        <nav>
+          <ul>
+            <li>
+              <a class="profile-icon active" href="cabinet.html">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              Профиль
+              </a>
+            </li>
+            <li><a class="company-icon" href="companies.html"><i class="fa fa-building" aria-hidden="true"></i>Компании</a></li>
+            <li><a class="purchase-icon" href="goverment-tenders.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Закупки</a></li>
+            <li><a class="tenders-icon" href="cabinet-tenders.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Тендеры</a></li>
+            <li><a class="notify-icon" href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>уведомления</a></li>
+            <li><a class="settings-icon" href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i>Настройки</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-    <div class="create-head purchase">
-      <a href="#">Назад</a>
-      <a class="link-save" href="#">Сохранить черновик</a>
-    </div>
-    <p class="create-company-head">создание плана закупок: шаг <span>1</span> из <span>3</span></p>
-    <div class="create-plan-inputs">
-      <div class="customer-info">
-        <p>общая информация</p>
-        <div class="customer-info-inputs">
-          <form action="submit" id="form-purchase">
-            <div class="cust-left">
-              <div class="create-purchase-company">
-                <select name="" id="">
-                  <option value="" selected="">Компания</option>
-                  <option value="" selected="">Компания</option>
-                  <option value="" selected="">Компания</option>
-                  <option value="" selected="">Компания</option>
-                </select>
-              </div>
-              <div class="create-purchase-procedure">
-                <select name="" id="">
-                  <option value="" selected="">Тип процедуры</option>
-                  <option value="">Компания</option>
-                  <option value="" >Компания</option>
-                  <option value="">Компания</option>
-                </select>
-              </div>
-              <div class="create-puchase-name input-field">
-                <input type="text" id="purchase-name">
-                <label for="purchase-name">Конкретное название предмета закупки</label>
-              </div>
-              <div class="create-purchase-documentation">
-                <p>Документация насчет закупки</p>
-                <input type="file" placeholder="Прикрепить файл">
-              </div>
-              <div class="notices input-field">
-                <input type="text" id="notices">
-                <label for="notices">Заметки</label>
-              </div>
-            </div>
-            <div class="cust-right">
-              <div class="input-calendar">
-                <div class="calendar-text">Прием предложений:</div>
-                <div class="calendar-wrap">
-                  <div class="calendar-left">
-                    <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
-                  </div>
-                  <div class="calendar-center">
-                    <p>до</p>
-                  </div>
-                  <div class="calendar-right">
-                    <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
-                  </div>
+    <div class="cabinet-inner">
+      <div class="cabinet-head">
+        <div class="cabinet-home">
+          <div class="home">
+            <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+          </div>
+          <div class="notification">
+            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+            <!-- <div class="notification-count">2</div> -->
+          </div>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="%=static=%img/general/logo-main.png" alt=""></a>
+        </div>
+        <div class="cabinet-out">
+          <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="create-head purchase">
+        <a href="#">Назад</a>
+        <a class="link-save" href="#">Сохранить черновик</a>
+      </div>
+      <form action="submit" id="form-purchase">
+      <p class="create-company-head">создание плана закупок: шаг <span>1</span> из <span>3</span></p>
+      <div class="create-plan-inputs">
+        <div class="customer-info">
+          <p>общая информация</p>
+          <div class="customer-info-inputs">
+            <form action="submit" id="form-purchase">
+            <div class="step1">
+              <div class="cust-left">
+                <div class="create-purchase-company">
+                  <select name="" id="">
+                    <option value="" selected="">Компания</option>
+                    <option value="" selected="">Компания</option>
+                    <option value="" selected="">Компания</option>
+                    <option value="" selected="">Компания</option>
+                  </select>
                 </div>
-              </div>
-              <div class="create-purchase-end input-field">
-                <input type="text" id="create-purchase">
-                <label for="create-purchase">Завершение периода уточнений</label>
-              </div>
-              <div class="excepted-prices">
-                <div class="excepted-price input-field">
-                  <input type="text" id="excepted-prices">
-                  <label for="excepted-prices">Ожидаемая стоимость</label>
-                </div>
-                <div class="excepted-currency">
+                <div class="create-purchase-procedure">
                   <select name="" id="">
                     <option value="" selected="">Тип процедуры</option>
                     <option value="">Компания</option>
@@ -112,26 +75,222 @@
                     <option value="">Компания</option>
                   </select>
                 </div>
+                <div class="create-puchase-name input-field">
+                  <input type="text" id="purchase-name">
+                  <label for="purchase-name">Конкретное название предмета закупки</label>
+                </div>
+                <div class="create-purchase-documentation">
+                  <p>Документация насчет закупки</p>
+                  <input type="file" placeholder="Прикрепить файл">
+                </div>
+                <div class="notices input-field">
+                  <input type="text" id="notices">
+                  <label for="notices">Заметки</label>
+                </div>
               </div>
-              <div class="check-confirm">
-                <input type="checkbox" name="confirm-check">
-                <label for="confirm-check">Учитывать ПДВ</label>
-              </div>
-              <div class="step-auction input-field">
-                <input type="text" id="step-auction">
-                <label for="step-auction">Шаг понижения ставки в аукционе</label>
+              <div class="cust-right">
+                <div class="input-calendar">
+                  <div class="calendar-text">Прием предложений:</div>
+                  <div class="calendar-wrap">
+                    <div class="calendar-left">
+                      <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
+                    </div>
+                    <div class="calendar-center">
+                      <p>до</p>
+                    </div>
+                    <div class="calendar-right">
+                      <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
+                    </div>
+                  </div>
+                </div>
+                <div class="create-purchase-end input-field">
+                  <input type="text" id="create-purchase">
+                  <label for="create-purchase">Завершение периода уточнений</label>
+                </div>
+                <div class="excepted-prices">
+                  <div class="excepted-price input-field">
+                    <input type="text" id="excepted-prices">
+                    <label for="excepted-prices">Ожидаемая стоимость</label>
+                  </div>
+                  <div class="excepted-currency">
+                    <select name="" id="">
+                      <option value="" selected="">Тип процедуры</option>
+                      <option value="">Компания</option>
+                      <option value="" >Компания</option>
+                      <option value="">Компания</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="check-confirm">
+                  <input type="checkbox" name="confirm-check">
+                  <label for="confirm-check">Учитывать ПДВ</label>
+                </div>
+                <div class="step-auction input-field">
+                  <input type="text" id="step-auction">
+                  <label for="step-auction">Шаг понижения ставки в аукционе</label>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="create-btns">
-      <div class="btn-save">
-        <button type="submit" form="form-purchase" value="Submit">Далее</button>
-      </div>
-      <div class="btn-cancel">
-        <a href="#">Отмена</a>
+        <div class="customer-info">
+          <div class="customer-info-inputs">
+            <div class="step2">
+              <p>Неценовой критерий</p>
+              <div class="cust-left1">
+                <div class="measure-wrap">
+                  <div class="measure-name input-field">
+                    <input type="text" id="measure-name1">
+                    <label for="measure-name">Название</label>
+                  </div>
+                  <div class="measure-description input-field">
+                    <input type="text" id="measure-description">
+                    <label for="measure-description">Описание</label>
+                  </div>
+                </div>
+                <div class="measure-wrap">
+                  <div class="measure-name input-field">
+                    <input type="text" id="measure-name2">
+                    <label for="measure-name2">Название</label>
+                  </div>
+                  <div class="measure-description input-field">
+                    <input type="text" id="measure-description2">
+                    <label for="measure-description2">Описание</label>
+                  </div>
+                </div>
+                <a href="#" class="add-more">добавить критерий</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-info">
+          <div class="customer-info-inputs">
+            <div class="step3">
+            <p>Список товаров и услуг, которые закупаются</p>
+              <div class="list-products">
+               <div class="left-products">
+                 <div class="lot-name input-field">
+                   <input type="text" id="lot-name">
+                   <label for="lot-name">Название части (лота) предмета закупки</label>
+                 </div>
+                 <div class="create-purchase-documentation">
+                  <p>Документация насчет закупки</p>
+                  <input type="file" placeholder="Прикрепить файл">
+                </div>
+                <div class="notices input-field">
+                  <input type="text" name="notices1">
+                  <label for="notices1">Заметки</label>
+                </div>
+               </div>
+               <div class="right-products">
+                <div class="excepted-value input-field">
+                  <input type="text" name="excepted-value">
+                  <label for="excepted-value">Ожидаемая стоимость</label>
+                </div>
+                <span>Вид обеспечения тендерных предложений:</span>
+                <div class="radio-customer">
+                  <input type="radio" value="Заказчик" name="customer">
+                  <label for="customer">Отсутствует</label>
+                </div>
+                <div class="radio-provider">
+                  <input type="radio" value="Поставщик">
+                  <label for="customer">Электронная гарантия</label>
+                </div>
+               </div>
+              </div>
+              <div class="all-lots">
+                <div class="lot">
+                  <div class="lot-head">
+                    <span>товары/услуги к лоту №1</span>
+                    <a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="lot-wrap">
+                    <div class="lot-columns">
+                      <div class="lot-left">
+                        <div class="part-lot">
+                          <input type="text" placeholder="Описание отдельно части (лота)">
+                        </div>
+                        <div class="parts-lot">
+                          <div class="part1">
+                            <input type="text" placeholder="CPV">
+                          </div>
+                          <div class="part2">
+                            <input type="text" placeholder="ДКПП">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lot-right">
+                        <div class="parts-lot additional">
+                          <div class="part1">
+                            <input type="text" placeholder="0">
+                          </div>
+                          <div class="part2">
+                           <select name="" id="">
+                            <option value="" selected="">Тип процедуры</option>
+                            <option value="">Компания</option>
+                            <option value="" >Компания</option>
+                            <option value="">Компания</option>
+                           </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lot-center">
+                      <span>Доставка:</span>
+                      <div class="lots-full-width">
+                        <div class="lot-full-left">
+                          <div class="lot-area">
+                            <select name="" id="">
+                            <option value="" selected="">Тип процедуры</option>
+                            <option value="">Компания</option>
+                            <option value="" >Компания</option>
+                            <option value="">Компания</option>
+                           </select>
+                          </div>
+                          <div class="lot-community">
+                            <input type="text" placeholder="Населенный пункт">
+                          </div>
+                        </div>
+                        <div class="lot-full-right">
+                          <div class="lot-index">
+                            <input type="text" placeholder="Индекс">
+                          </div>
+                          <div class="lot-address">
+                            <input type="text" placeholder="Адрес">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lot-left lot-mt">
+                      <div class="part-lot">
+                        <input type="text" placeholder="Описание отдельно части (лота)">
+                      </div>
+                      <div class="parts-lot">
+                        <div class="part1">
+                          <input type="text" placeholder="CPV">
+                        </div>
+                        <div class="part2">
+                          <input type="text" placeholder="ДКПП">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="create-btns">
+                <div class="btn-back">
+                  <a href="#">Назад</a>
+                </div>
+                <div class="btn-save">
+                  <button type="submit" form="form-purchase" value="Submit">Далее</button>
+                </div>
+                <div class="btn-cancel">
+                  <a href="#">Отмена</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
