@@ -147,10 +147,28 @@
 // 	}
 // }
 
-.step1, .step2{
+.step1	{
 	display: flex;
 	justify-content: space-between;
-	display: none;
+	// display: none;
+}
+
+.step1{
+	background-color: #fff;
+	padding: 20px;
+}
+
+.step3{
+	padding: 20px;
+}
+
+.measures, .options{
+	padding: 20px;
+	background-color: #fff;
+}
+
+.options{
+	margin-top: 30px;
 }
 
 .step2, .step3{
@@ -1308,6 +1326,10 @@ input.cmn-toggle-round:checked + label:after {
 	background-color: #fff;
 }
 
+.additional-lot{
+	margin-top: 30px;
+}
+
 .lot .list-products{
 	input, select{
 		margin-top: 30px;
@@ -1399,4 +1421,10 @@ input.cmn-toggle-round:checked + label:after {
 
 .btn-save{
 	margin-left: 10px;
+}
+
+.goods{
+	.lot-head, .lot-wrap{
+		background-color: #fff;
+	}
 }

@@ -50,13 +50,8 @@
         <a href="#">Назад</a>
         <a class="link-save" href="#">Сохранить черновик</a>
       </div>
-      <form action="submit" id="form-purchase">
       <p class="create-company-head">создание плана закупок: шаг <span>1</span> из <span>3</span></p>
-      <div class="create-plan-inputs">
-        <div class="customer-info">
-          <p>общая информация</p>
-          <div class="customer-info-inputs">
-            <form action="submit" id="form-purchase">
+      <form action="submit" id="form-purchase">
             <div class="step1">
               <div class="cust-left">
                 <div class="create-purchase-company">
@@ -131,13 +126,9 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="customer-info">
-          <div class="customer-info-inputs">
             <div class="step2">
-              <p>Неценовой критерий</p>
-              <div class="cust-left1">
+              <div class="measures">
+              <p>test</p>
                 <div class="measure-wrap">
                   <div class="measure-name input-field">
                     <input type="text" id="measure-name1">
@@ -150,21 +141,42 @@
                 </div>
                 <div class="measure-wrap">
                   <div class="measure-name input-field">
-                    <input type="text" id="measure-name2">
-                    <label for="measure-name2">Название</label>
+                    <input type="text" id="measure-name1">
+                    <label for="measure-name">Название</label>
                   </div>
                   <div class="measure-description input-field">
-                    <input type="text" id="measure-description2">
-                    <label for="measure-description2">Описание</label>
+                    <input type="text" id="measure-description">
+                    <label for="measure-description">Описание</label>
                   </div>
                 </div>
                 <a href="#" class="add-more">добавить критерий</a>
               </div>
+              <div class="options">
+                <p>test</p>
+                <div class="measure-wrap">
+                  <div class="measure-name input-field">
+                    <input type="text" id="measure-name1">
+                    <label for="measure-name">Название</label>
+                  </div>
+                  <div class="measure-description input-field">
+                    <input type="text" id="measure-description">
+                    <label for="measure-description">Описание</label>
+                  </div>
+                </div>
+                <div class="measure-wrap">
+                  <div class="measure-name input-field">
+                    <input type="text" id="measure-name1">
+                    <label for="measure-name">Название</label>
+                  </div>
+                  <div class="measure-description input-field">
+                    <input type="text" id="measure-description">
+                    <label for="measure-description">Описание</label>
+                  </div>
+                </div>
+                <a href="#" class="add-more">добавить опцию</a>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="customer-info info3">
-          <div class="customer-info-inputs">
+
             <div class="step3">
               <div class="all-lots">
                 <div class="lot white">
@@ -203,17 +215,16 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="lot">
-                  <div class="lot-head">
+                  <div class="additional-lot">
+                    <div class="lot-head">
                     <span>товары/услуги к <span class="lot-bold">лоту №1</span></span>
-                    <a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+                    <a href="#"><span class="lot-bolds">Товар №1</span></a>
                   </div>
                   <div class="lot-wrap">
                     <div class="lot-columns">
                       <div class="lot-left">
                         <div class="part-lot">
-                          <input type="text" placeholder="Описание отдельно части (лота)">
+                          <input type="text" placeholder="Название предмета закупки">
                         </div>
                         <div class="parts-lot">
                           <div class="part1">
@@ -226,88 +237,7 @@
                       </div>
                       <div class="lot-right">
                         <div class="parts-lot additional">
-                          <div class="part1">
-                            <input type="text" placeholder="0">
-                          </div>
-                          <div class="part2">
-                            <select name="" id="">
-                              <option value="" selected="">Тип процедуры</option>
-                              <option value="">Компания</option>
-                              <option value="" >Компания</option>
-                              <option value="">Компания</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="lot-center">
-                      <span>Доставка:</span>
-                      <div class="lots-full-width">
-                        <div class="lot-full-left">
-                          <div class="lot-area">
-                            <select name="" id="">
-                              <option value="" selected="">Тип процедуры</option>
-                              <option value="">Компания</option>
-                              <option value="" >Компания</option>
-                              <option value="">Компания</option>
-                            </select>
-                          </div>
-                          <div class="lot-community">
-                            <input type="text" placeholder="Населенный пункт">
-                          </div>
-                        </div>
-                        <div class="lot-full-right">
-                          <div class="lot-index">
-                            <input type="text" placeholder="Индекс">
-                          </div>
-                          <div class="lot-address">
-                            <input type="text" placeholder="Адрес">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="lot-left lot-mt">
-                      <div class="parts-lot">
-                        <div class="part1">
-                          <input type="text" id="datemepicker" placeholder="22.10.2016 в 14:50">
-                        </div>
-                        <div class="part2">
-                          <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="lot-left lot-mt">
-                      <div class="create-purchase-lot">
-                        <span>Документация:</span>
-                        <input type="file" placeholder="Прикрепить файл">
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="add-more">добавить товар/услугу к лоту</a>
-                </div>
-                <div class="lot">
-                  <div class="lot-head">
-                    <span>товары/услуги к <span class="lot-bold">лоту №1</span></span>
-                    <a href="#"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
-                  </div>
-                  <div class="lot-wrap">
-                    <div class="lot-columns">
-                      <div class="lot-left">
-                        <div class="part-lot">
-                          <input type="text" placeholder="Описание отдельно части (лота)">
-                        </div>
-                        <div class="parts-lot">
-                          <div class="part1">
-                            <input type="text" placeholder="CPV">
-                          </div>
-                          <div class="part2">
-                            <input type="text" placeholder="ДКПП">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="lot-right">
-                        <div class="parts-lot additional">
-                          <div class="part1">
+                          <div class="part1 input-field">
                             <input type="text" placeholder="0">
                           </div>
                           <div class="part2">
@@ -322,7 +252,7 @@
                       </div>
                     </div>
                     <div class="lot-center">
-                      <span>Доставка:</span>
+                      <span class="name-value">Доставка:</span>
                       <div class="lots-full-width">
                         <div class="lot-full-left">
                           <div class="lot-area">
@@ -348,24 +278,90 @@
                       </div>
                     </div>
                     <div class="lot-left lot-mt">
+                      <span class="name-value">Срок поставки товаров:</span>
                       <div class="parts-lot">
                         <div class="part1">
                           <input type="text" id="datemepicker" placeholder="22.10.2016 в 14:50">
                         </div>
-                        <div class="part2">
-                          <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="additional-lot">
+                    <div class="lot-head">
+                    <span>товары/услуги к <span class="lot-bold">лоту №1</span></span>
+                    <a href="#"><span class="lot-bolds">Товар №1</span></a>
+                  </div>
+                  <div class="lot-wrap">
+                    <div class="lot-columns">
+                      <div class="lot-left">
+                        <div class="part-lot">
+                          <input type="text" placeholder="Название предмета закупки">
+                        </div>
+                        <div class="parts-lot">
+                          <div class="part1">
+                            <input type="text" placeholder="CPV">
+                          </div>
+                          <div class="part2">
+                            <input type="text" placeholder="ДКПП">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lot-right">
+                        <div class="parts-lot additional">
+                          <div class="part1 input-field">
+                            <input type="text" placeholder="0">
+                          </div>
+                          <div class="part2">
+                            <select name="" id="">
+                              <option value="" selected="">Штук</option>
+                              <option value="">Компания</option>
+                              <option value="" >Компания</option>
+                              <option value="">Компания</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lot-center">
+                      <span class="name-value">Доставка:</span>
+                      <div class="lots-full-width">
+                        <div class="lot-full-left">
+                          <div class="lot-area">
+                            <select name="" id="">
+                              <option value="" selected="">Тип процедуры</option>
+                              <option value="">Компания</option>
+                              <option value="" >Компания</option>
+                              <option value="">Компания</option>
+                            </select>
+                          </div>
+                          <div class="lot-community">
+                            <input type="text" placeholder="Населенный пункт">
+                          </div>
+                        </div>
+                        <div class="lot-full-right">
+                          <div class="lot-index">
+                            <input type="text" placeholder="Индекс">
+                          </div>
+                          <div class="lot-address">
+                            <input type="text" placeholder="Адрес">
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="lot-left lot-mt">
-                      <div class="create-purchase-lot">
-                        <span>Документация:</span>
-                        <input type="file" placeholder="Прикрепить файл">
+                      <span class="name-value">Срок поставки товаров:</span>
+                      <div class="parts-lot">
+                        <div class="part1">
+                          <input type="text" id="datemepicker" placeholder="22.10.2016 в 14:50">
+                        </div>
                       </div>
                     </div>
                   </div>
+                  </div> <!-- END OF ADDITIONAL LOT -->
                   <a href="#" class="add-more">добавить товар/услугу к лоту</a>
                 </div>
+ 
                 <div class="lot white">
                   <div class="lot-head">
                     <span>Список товаров и услуг, которые закупаются</span>
@@ -407,7 +403,7 @@
                     <a href="#" class="delete-btn">Удалить лот</a>
                   </div>
                 </div>
-                <div class="lot white">
+                <div class="lot goods">
                   <div class="lot-head">
                     <span>товары/услуги к <span class="lot-bold">лоту №1</span></span>
                     <a href="#"><span class="lot-bolds">Товар №1</span></a>
@@ -506,9 +502,5 @@
                 </div>
                 </div> -->
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
