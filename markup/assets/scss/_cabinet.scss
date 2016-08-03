@@ -1259,6 +1259,11 @@ input.cmn-toggle-round:checked + label:after {
 	justify-content: space-between;
 }
 
+.list-products.list3{
+	padding: 20px;
+	background-color: #fff;
+}
+
 .left-products, .right-products, .part1, .part2{
 	width: 45%;
 }
@@ -1271,9 +1276,46 @@ input.cmn-toggle-round:checked + label:after {
 	margin-top: 30px;
 }
 
+.lot-head{
+	border-bottom: 2px solid #dee8ea;
+	background-color: #f8fafb;
+	padding: 20px;
+	text-transform: uppercase;
+	color: #86949b;
+	display: flex;
+  justify-content: space-between;
+  font-family: $Lato-Semibold;
+  i{
+  	font-size: 19px;
+  	color: #737980;
+  }
+}
+
+.lot-bold{
+	font-family: $Lato;
+	font-weight: 700;
+	font-size: 15px;
+}
+
 .lot-wrap{
 	padding: 20px;
 	background-color: #f8fafb;
+}
+
+.lot{
+	margin-top: 30px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.lot .list-products{
+	input, select{
+		margin-top: 30px;
+	}
+}
+
+.lot .radio-customer input, .lot .radio-provider input{
+	margin-top: 0;
 }
 
 .lot-left, .lot-right{
@@ -1320,6 +1362,10 @@ input.cmn-toggle-round:checked + label:after {
 	justify-content: space-between;
 }
 
+.lots-full-width{
+	margin-top: 10px;
+}
+
 .lot-full-left, .lot-full-right{
 	width: 45%;
 }
@@ -1330,4 +1376,27 @@ input.cmn-toggle-round:checked + label:after {
 
 .lot-mt{
 	margin-top: 30px;
+}
+
+.create-purchase-lot{
+	display: flex;
+	align-items: center;
+	input{
+		background: none;
+		border: none;
+	}
+}
+
+.customer-info.info3{
+	background-color: #f6f8f9;
+	padding: 0;
+}
+
+.lot-bolds{
+	color: #262832;
+	font-family: $Lato-Black;
+}
+
+.btn-save{
+	margin-left: 10px;
 }

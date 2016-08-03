@@ -542,7 +542,7 @@ select:disabled {
   opacity: 0;
   position: absolute;
   z-index: 999;
-  border: 1px solid $red1;
+  border: 1px solid #dee8ea;
   will-change: width, height;
 }
 
@@ -555,7 +555,7 @@ select:disabled {
   width: 100%;
   text-align: left;
   text-transform: none;
-  border-bottom: 1px solid $red1;
+  border-bottom: 1px solid #dee8ea;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
