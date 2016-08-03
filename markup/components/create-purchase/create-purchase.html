@@ -1,3 +1,5 @@
+
+
 <div class="cabinet-wrap">
   <div class="cabinets">
     <div class="sidebar">
@@ -50,8 +52,10 @@
         <a href="#">Назад</a>
         <a class="link-save" href="#">Сохранить черновик</a>
       </div>
-      <p class="create-company-head">создание плана закупок: шаг <span>1</span> из <span>3</span></p>
+      
       <form action="submit" id="form-purchase">
+            <fieldset>
+            <p class="create-company-head">создание плана закупок: шаг <span>1</span> из <span>3</span></p>
             <div class="step1">
               <div class="cust-left">
                 <div class="create-purchase-company">
@@ -126,6 +130,12 @@
                 </div>
               </div>
             </div>
+            <!-- <div class="next-button"> -->
+              <input type="button" name="next" class="next action-button" value="Далее" />
+            <!-- </div> -->
+            </fieldset>
+            <fieldset>
+            <p class="create-company-head">создание плана закупок: шаг <span>2</span> из <span>3</span></p>
             <div class="step2">
               <div class="measures">
               <p>test</p>
@@ -176,7 +186,12 @@
                 <a href="#" class="add-more">добавить опцию</a>
               </div>
             </div>
-
+            <input type="button" name="previous" class="previous action-button" value="Шаг назад" />
+        
+              <input type="button" name="next" class="next action-button" value="Далее" />
+                  </fieldset>
+            <fieldset>
+            <p class="create-company-head">создание плана закупок: шаг <span>3</span> из <span>3</span></p>
             <div class="step3">
               <div class="all-lots">
                 <div class="lot white">
@@ -479,7 +494,7 @@
                   </div>
                 </div>
               </div>
-              <div class="create-btns">
+              <!-- div class="create-btns">
                 <div class="btn-back">
                   <a class="btn-grey1" href="#">шаг назад</a>
                 </div>
@@ -489,7 +504,7 @@
                 <div class="btn-cancel">
                   <a href="#">Отмена</a>
                 </div>
-              </div>
+              </div> -->
               <!-- <div class="create-btns">
                 <div class="btn-back">
                   <a class="btn-grey1" href="#">Назад</a>
@@ -502,6 +517,11 @@
                 </div>
                 </div> -->
             </div>
+            <input type="button" name="previous" class="previous action-button" value="Шаг назад" />
+    <input type="submit" name="submit" class="submit action-button" value="Завершить" />
+            </fieldset>
+            </form>
+
   </div>
 </div>
 </div>
