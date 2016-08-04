@@ -1266,10 +1266,17 @@ input.cmn-toggle-round:checked + label:after {
 .measure-wrap, .option-wrap{
 	border-bottom: 2px solid #f8fafb;
 	padding-bottom: 30px;
+	width: 50%;
+	position: relative;
+	a{
+		position: absolute;
+    top: 12px;
+    right: -80px;
+	}
 }
 
 .measure-wrap > div, .option-wrap > div{
-	width: 50%;
+	// width: 50%;
 }
 
 .list-products{

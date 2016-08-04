@@ -759,3 +759,20 @@ progress::-webkit-progress-value {
 	color: #505a60;
 	padding-left: 12px;
 }
+
+.breadcrumbs{
+	padding: 60px 0;
+	border-bottom: 2px solid #dee8ea;
+	background-image: url("%=static=%general/1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	ul{
+		display: flex;
+	}
+	a{
+		font-size: 16px;
+		font-family: $Lato-Semibold;
+		color: #86949b;
+		text-transform: uppercase;
+	}
+}

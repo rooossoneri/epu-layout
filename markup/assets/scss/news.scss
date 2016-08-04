@@ -1,0 +1,160 @@
+.news{
+	.inner{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.news-block{
+	max-width: 675px;
+	font-family: $Lato-Semibold;
+}
+
+.simple-news{
+	padding: 60px 6px 60px;
+	border-bottom: 2px solid #dee8ea;
+	&:first-child{
+		padding-top: 0;
+	}
+}
+
+.news-head{
+	font-size: 24px;
+	color: #3a4247;
+	letter-spacing: 1.5px;
+	margin-top: 30px;
+}
+
+.news-links{
+	margin: 16px 0 40px;
+	display: flex;
+	ul{
+		display: flex;
+	}
+	li{
+		padding: 0 13px;
+		border-right: 2px solid #c1c5c9;
+		&:first-child{
+			padding-left: 0;
+		}
+	}
+	a{
+		color: #a8adb3;
+		font-size: 11px;
+	}
+	i{
+		color: #86949b;
+		font-size: 14px;
+	}
+}
+
+.share{
+	margin-left: 13px;
+	display: flex;
+	li{
+		border: none;
+		&:first-child{
+			padding-left: 13px;
+		}
+	}
+}
+
+.news-text{
+	color: #86949b;
+	letter-spacing: 1px;
+	font-size: 14px;
+  line-height: 25px;
+}
+
+.news-btn{
+	margin-top: 50px;
+}
+
+.news-sidebar{
+	background-color: #2e3033;
+	// padding: 47px;
+	font-family: $Lato-Semibold;
+	max-width: 370px;
+	h3{
+		color: #fff;
+		font-family: $MyriadPro-BoldCond;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	a{
+		color: #fff;
+	}
+}
+
+.side-list{
+	margin-top: 40px;
+	padding-left: 20px;
+	li{
+		list-style-type: disc;
+		color: $red1;
+		margin-top: 25px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	a{
+		letter-spacing: 1px;
+		span{
+			color: #86949b;
+		}
+	}
+}
+
+.side-block{
+	padding: 47px;
+	border-bottom: 2px solid #383a3d;
+}
+
+.last-simple-news{
+	padding: 30px 0;
+	border-bottom: 2px solid #383a3d;
+	&:first-child{
+		padding-top: 40px;
+	}
+}
+
+.last-text{
+	margin-bottom: 18px;
+	a{
+		letter-spacing: 1px;
+	}
+}
+
+.last-links{
+	ul{
+		display: flex;
+	}
+	a{
+		color: #86949b;
+	}
+	li{
+		padding: 0 13px;
+		&:first-child{
+			border-right: 2px solid #86949b;
+			padding-left: 0;
+		}
+	}
+}
+
+.share-btns{
+	margin-top: 55px;
+	display: flex;
+	justify-content: flex-end;
+	ul{
+		display: flex;
+	}
+	li{
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	p{
+		margin-right: 30px;
+	}
+}

@@ -1,0 +1,137 @@
+.instructions-block, .questions-block{
+	.section-head{
+		@include section-head($red1, $text)
+	}
+}
+
+.instructions{
+	display: flex;
+	justify-content: space-around;
+	max-width: 1040px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	margin-left: 100px;
+}
+
+.instruction{
+	max-width: 350px;
+	position: relative;
+	margin-top: 90px;
+	&:before{
+		content: '';
+		position: absolute;
+		left: -85px;
+		@include bg($person);
+	}
+}
+
+.person{
+	&:before{
+		@include bg($person);
+	}
+}
+
+.bucket{
+	&:before{
+		@include bg($bucket);
+	}
+}
+
+.bucket1{
+	&:before{
+		@include bg($bucket1);
+	}
+}
+
+.desk{
+	&:before{
+		@include bg($desk);
+	}
+}
+
+.instructions-block{
+	margin-bottom: 30px;
+}
+
+.instruction-head{
+	font-family: $Lato;
+	font-weight: 700;
+	font-size: 22.63px;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+.instruction-text{
+	font-family: $Lato-Semibold;
+	font-size: 16px;
+	color: #797979;
+	line-height: 30px;
+}
+
+.instruction-btn{
+	font-family: $Lato-Semibold;
+	font-size: 19px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $red1;
+}
+
+
+
+// QUESTIONS
+
+
+.questions{
+	margin-top: 50px;
+}
+
+
+button.accordion {
+    color: #444;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.55);
+    background: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    position: relative;
+    &:before{
+    	content: '';
+    	position: absolute;
+    	right: 30px;
+    	top: 23px;
+    	@include bg($arrow-red-bottom);
+    }
+}
+
+button.accordion.active, button.accordion:hover {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.55);
+}
+button.accordion.active{
+	&:before{
+		@include bg($arrow-red-top);
+	}
+}
+div.panel {
+    padding: 20px 100px;
+    color: #3a4247;
+    font-size: 16px;
+		border-radius: 3px;
+    background-color: #f5f8f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
