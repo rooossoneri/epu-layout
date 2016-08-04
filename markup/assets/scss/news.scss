@@ -158,3 +158,120 @@
 		margin-right: 30px;
 	}
 }
+
+.relative-simple-news{
+	max-width: 300px;
+}
+
+.news-head{
+	font-family: $MyriadPro-BoldCond;
+	text-transform: uppercase;
+	color: #383a3d;
+	span{
+		color: #86949b;
+	}
+}
+
+.relative-news, .commentaries-wrap{
+	border-bottom: 2px solid #dee8ea;
+}
+
+.relative-news-wrap{
+	padding: 30px 0 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.relative-text{
+	padding: 15px;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.55);
+	margin-top: -3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	a{
+		letter-spacing: 1px;
+    line-height: 25px;
+	}
+	.last-links{
+		margin-top: 15px;
+	}
+}
+
+.commentaries-wrap{
+	padding-bottom: 30px;
+}
+
+.simple-comment{
+	margin-top: 50px;
+}
+
+.comment-name{
+	font-family: $Lato-Black;
+	color: #383a3d;
+	letter-spacing: 1px;
+}
+
+.comment-time{
+	font-size: 11px;
+	color: #a8adb3;
+	margin-top: 5px;
+}
+
+.comment-text{
+	margin-top: 25px;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+#comment-form{
+	input, textarea{
+		width: 100%;
+		background-color: #f5f8f9;
+		padding: 20px;
+		border: none;
+	}
+	textarea{
+		height: 150px;
+		margin-top: 30px;
+	}
+	input{
+		// background-color: 
+	}
+	button{
+		border: none;
+	}
+	::-webkit-input-placeholder {
+		color:#86949b;
+		font-family: $Lato-Semibold;
+		letter-spacing: 1px;
+	}
+	::-moz-placeholder          {
+		color:#86949b;
+		font-family: $Lato-Semibold;
+		letter-spacing: 1px;
+		}/* Firefox 19+ */
+	:-moz-placeholder           {
+		color:#86949b;
+		font-family: $Lato-Semibold;
+		letter-spacing: 1px;
+		}/* Firefox 18- */
+	:-ms-input-placeholder      {
+		color:#86949b;
+		font-family: $Lato-Semibold;
+		letter-spacing: 1px;
+	}
+}
+
+.inputs-comment{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.left-input, .right-input{
+	width: 45%;
+}
+
+.comment-btn{
+	margin-top: 30px;
+}
