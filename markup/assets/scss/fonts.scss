@@ -14,7 +14,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     src: url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
          url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.woff') format('woff'),
          url('../fonts/MyriadPro-BoldCond/MyriadPro-BoldCond.svg#custom_font') format('svg');
-    // font-weight: 400;       // For normal width. It could has another value   
+    // font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
 }
 
@@ -25,7 +25,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     src: url('../fonts/Menlo-Bold/Menlo-Bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Menlo-Bold/Menlo-Bold.woff') format('woff'),
          url('../fonts/Menlo-Bold/Menlo-Bold.svg#custom_font') format('svg');
-    // font-weight: 400;       // For normal width. It could has another value   
+    // font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
 }
 
@@ -35,7 +35,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     src: url('../fonts/Lato-Semibold/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Lato-Semibold/Lato-Semibold.woff') format('woff'),
          url('../fonts/Lato-Semibold/Lato-Semibold.svg#custom_font') format('svg');
-    // font-weight: 400;       // For normal width. It could has another value   
+    // font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
 }
 
@@ -45,7 +45,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     src: url('../fonts/Lato-Black/Lato-Black.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Lato-Black/Lato-Black.woff') format('woff'),
          url('../fonts/Lato-Black/Lato-Black.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value   
+    font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
 }
 
@@ -56,7 +56,17 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     src: url('../fonts/Lato-Regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Lato-Regular/Lato-Regular.woff') format('woff'),
          url('../fonts/Lato-Regular/Lato-Regular.svg#custom_font') format('svg');
-    // font-weight: 400;       // For normal width. It could has another value   
+    // font-weight: 400;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'Lato-Medium';
+    src: url('../fonts/Lato-Medium/Lato-Medium.eot');
+    src: url('../fonts/Lato-Medium/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Medium/Lato-Medium.woff') format('woff'),
+         url('../fonts/Lato-Medium/Lato-Medium.svg#custom_font') format('svg');
+    // font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
 }
 
@@ -66,7 +76,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     src: url('../fonts/fontawesome-webfont/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/fontawesome-webfont/fontawesome-webfont.woff') format('woff'),
          url('../fonts/fontawesome-webfont/fontawesome-webfont.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value   
+    font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
 }
 

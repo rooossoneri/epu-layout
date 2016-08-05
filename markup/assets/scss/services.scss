@@ -7,10 +7,11 @@
 .services-block{
 	background-color: #f5f8f9;
 	padding: 30px 0;
-	.inner{
-		display: flex;
-		justify-content: space-between;
-	}
+}
+
+.services-wrap{
+	display: flex;
+	justify-content: space-between;
 }
 
 .service{
@@ -32,7 +33,7 @@
 }
 
 .service-list{
-	// height: 100%;
+	min-height: 200px;
 }
 
 .service-title{
@@ -75,4 +76,20 @@
 	span{
 		color: $text-bold;
 	}
+}
+
+.services-text{
+	color: #000;
+	font-size: 18px;
+	font-family: $Lato-Semibold;
+	margin: 30px 0 0 10px;
+	span{
+		font-family: $Lato-Black;
+		font-size: 17px;
+	}
+}
+
+.additional{
+	font-size: 14px;
+	font-family: $Lato-Medium;
 }
