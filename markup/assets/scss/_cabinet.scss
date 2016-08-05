@@ -346,15 +346,23 @@
 
 .comp-btn{
 	a{
-		@include button-red-icon;
+		// @include button-red-icon;
+		padding: 18px 23px 18px 54px;
 		position: relative;
 		&:before{
-			content: '';
-			position: absolute;
+	    content: '+';
+	    width: 19px;
+	    height: 15px;
+	    border: 1px solid #fff;
+	    border-radius: 50%;
+	    text-align: center;
+	    padding-bottom: 4px;
+	    display: flex;
+	    position: absolute;
 	    top: 19px;
-    	left: 30px;
-			@include bg($plus);
-		}
+	    left: 22px;
+	    justify-content: center;
+	    align-items: center;		}
 	}
 }
 
@@ -384,6 +392,10 @@
 .company-edit{
 	display: flex;
   justify-content: flex-end;
+  i{
+  	font-size: 17px;
+    color: #bacbce;
+  }
 	a{
 	  width: 32px;
 	  height: 30px;
@@ -393,6 +405,11 @@
 	  justify-content: center;
 	  background-color: #dee8ea;
 	}
+}
+
+.company-edit a:hover i{
+	color: $red1;
+	transition: color .35s ease;
 }
 
 .comp-name{
@@ -425,6 +442,9 @@
 		text-transform: uppercase;
 		font-family: $Lato;
 		font-weight: 700;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -467,8 +487,8 @@
 	}
 }
 .company-create form{
-	display: flex;
-	justify-content: space-between;
+	// display: flex;
+	// justify-content: space-between;
 }
 
 .properties-head{
@@ -641,10 +661,9 @@
 }
 .btn-save{
 	button{
-		@include button-red;
 		border: none;
 		font-size: 12px;
-		font-family: $Lato-Semibold;	
+		font-family: $Lato-Semibold;
 	}
 }
 .btn-cancel{
@@ -791,6 +810,16 @@
 	}
 }
 
+.product-item{
+	width: 45%;
+	position: relative;
+	a{
+		    position: absolute;
+    top: 12px;
+    right: -80px;
+	}
+}
+
 .add-more{
 	position: relative;
 	font-family: $Lato;
@@ -802,11 +831,18 @@
 	margin-top: 20px;
 	display: block;
 	&:before{
-		content: '';
+		content: '+';
 		position: absolute;
 		left: -26px;
+		width: 17px;
+		height: 17px;
+		background-color: $red1;
+		color: #fff;
+		border-radius: 50%;
+		text-align: center;
 		top: -2px;
-		@include bg($plus-red);
+		font-size: 13px;
+		// @include bg($plus-red);
 	}
 }
 
@@ -1244,9 +1280,6 @@ input.cmn-toggle-round:checked + label:after {
 	.section-head{
 		padding-left: 0;
 	}
-	button{
-		@include button-white;
-	}
 }
 .pass-btn{
 	margin-top: 20px;
@@ -1260,6 +1293,11 @@ input.cmn-toggle-round:checked + label:after {
 .pass-back{
 	text-align: center;
 	margin-top: 10px;
+}
+
+.pass-btn a:hover{
+	color: $red1;
+	transition: color .35s ease;
 }
 
 
@@ -1566,3 +1604,8 @@ input.cmn-toggle-round:checked + label:after {
 	width: 150px;
 	padding: 20px;
 }
+
+.form-wrap-main{
+	display: flex;
+	justify-content: space-between;
+} 	

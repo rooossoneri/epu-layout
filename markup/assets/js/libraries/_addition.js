@@ -181,6 +181,11 @@ $(".previous").click(function(){
   });
 });
 
+$('.sidebar-menu nav ul li a').click(function(){
+    $('.sidebar-menu nav ul li a').removeClass("active");
+    $(this).addClass("active");
+});
+
 $(".submit").click(function(){
   return false;
 })

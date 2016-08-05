@@ -54,7 +54,9 @@
 		}
 	}
 	a{
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
     width: 40px;
     height: 40px;
 		border: 3px solid #555659;
@@ -62,44 +64,22 @@
     text-align: center;
     @include hover($white);
 	}
+	i{
+		font-size: 18px;
+		color: #fff;
+	}
 	img{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 	}
 }
-.facebook{
-	background-image: url("%=static=%general/fb.png");
-	background-repeat: no-repeat;
-	background-position: 15px 11px;
-	&:hover{
-		background-image: url("%=static=%general/facebook-hover.png");
-	}
+
+.footer-social a:hover i{
+	color: #000;
+	transition: color .35s ease;
 }
-.twitter{
-	background-image: url("%=static=%general/twitter.png");
-	background-repeat: no-repeat;
-	background-position: 12px 13px;
-	&:hover{
-		background-image: url("%=static=%general/twitter-hover.png");
-	}
-}
-.linkedin{
-	background-image: url("%=static=%general/linkedin.png");
-	background-repeat: no-repeat;
-	background-position: 12px 11px;
-	&:hover{
-		background-image: url("%=static=%general/linedin-hover.png");
-	}
-}
-.google{
-	background-image: url("%=static=%general/google.png");
-	background-repeat: no-repeat;
-	background-position: 9px 11px;
-	&:hover{
-		background-image: url("%=static=%general/google-hover.png");
-	}
-}
+
 .footer-bottom{
 	padding: 30px 0;
 	background-color: #242629;
