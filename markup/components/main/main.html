@@ -21,6 +21,7 @@
 			<p>Введите в фильтр дополнительную информацию о тендере: код классификации продукции ДКПП (резидентам), CPV – (не резидентам), а также <span>дополнительную</span> информацию,<span> регион, стоимость и дату</span> оформления.</p>
 		</div>
 		<div class="tenders-form">
+		<form action="submit">
 			<div class="tender-input">
 				<input type="search" placeholder="Начните вводить, к примеру, “древесина”">
 			</div>
@@ -32,19 +33,71 @@
 					<a href="#">CPV</a>
 				</div>
 				<div class="location">
-					<a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+					<a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+					<div class="location-dropdown">
+	<div class="location-head">
+		<input type="text" placeholder="Начните вводить регион">
+	</div>
+	<div class="location-dropdowns">
+		<ul>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+			<li><div class="checkbox"><input type="checkbox"></div><div class="city">Винницкая обл.</div></li>
+		</ul>
+	</div>
+	<div class="location-btn"><button type="submit">Выбрать</button></div>
+</div>
 				</div>
 				<div class="money">
-					<a href="#"><i class="fa fa-usd" aria-hidden="true"></i></a>
+					<a href="#!"><i class="fa fa-usd" aria-hidden="true"></i></a>
+					<div class="money-dropdown">
+						<div class="money-wrap">
+							<div class="money-left">
+								<label for="">Цена от:</label>
+								<input type="number">
+							</div>
+							<div class="money-left">
+								<label for="">Цена до:</label>
+								<input type="number">
+							</div>
+						</div>
+						<div class="money-btn">
+							<button class="btn-red">Выбрать</button>
+						</div>
+					</div>
 				</div>
 				<div class="calendar">
-					<a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+					<a href="#!"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+						<div class="calendar-picker">
+						<div class="calendar-wraps		">
+						<div class="date-begin">
+							<label for="date-begin">Дата начала:</label>
+							<input name="date-begin" id="date_timepicker_start" type="text" placeholder="Выберите дату начала">
+						</div>
+						<div class="date-end">
+							<label for="date-end">Дата окончания:</label>
+							<input name="date-end" id="date_timepicker_end" type="text" placeholder="Выберите дату конца">
+						</div>
+					</div>
+					</div>
 				</div>
 			</div>
 			<div class="find-tender-btn">
 				<button class="btn-red-icon">искать</button>
 			</div>
 		</div>
+		</form>
 	</div>
 </section>
 <section class="tenders">
@@ -551,13 +604,3 @@
 
 </div> 
 
-<!-- <div class="calendar-picker">
-	<div class="date-begin">
-		<label for="date-begin">Дата начала:</label>
-		<input name="date-begin" id="date_timepicker_start" type="text" placeholder="Выберите дату начала">
-	</div>
-	<div class="date-end">
-		<label for="date-end">Дата окончания:</label>
-		<input name="date-end" id="date_timepicker_end" type="text" placeholder="Выберите дату конца">
-	</div>
-</div> -->

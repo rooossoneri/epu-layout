@@ -110,9 +110,11 @@
 	}
 }
 .tenders-form{
+	form{
 	display: flex;
 	margin-top: 55px;
 	justify-content: space-between;
+}
 }
 .find-tender-btn{
 	margin-left: 20px;
@@ -184,6 +186,17 @@
 		}
 	}
 }
+
+.location-dropdown{
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 190px;
+	z-index: 1;
+}
+
+
 
 .tender-input{
 	::-webkit-input-placeholder {color: $text-p;

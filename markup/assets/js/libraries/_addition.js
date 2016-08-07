@@ -89,7 +89,39 @@ $('.reg-dropdown').on('click', function(){
     $('.hidden-types').addClass('active');
 });
 
+$(".location, .location-btn").click(function(){
+    $(".location-dropdown").toggle();
+})
 
+ $(".location-dropdown").click(function(event){
+  event.stopPropagation();
+ });
+
+$(".calendar").click(function(){
+    $(".calendar-picker").toggle();
+})
+
+ $(".calendar-picker").click(function(event){
+  event.stopPropagation();
+ });
+
+ $(".money").click(function(){
+    $(".money-dropdown").toggle();
+})
+
+ $(".money-dropdown").click(function(event){
+  event.stopPropagation();
+ });
+$(document).mouseup(function (e)
+{
+    var container = $(".location-dropdown, .calendar-picker, .money-dropdown");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+    }
+});
 // ACTIVE ON SIDEBAR MENU
 
 $(document).ready(function(){
@@ -102,6 +134,8 @@ $(document).ready(function(){
 $(document).ready(function() {
     $('select').material_select();
   });
+
+
 
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets

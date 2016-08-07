@@ -85,6 +85,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 })( window );
 jQuery('#datetimepicker').datetimepicker();
+jQuery('#datetimepicker1').datetimepicker();
 
 
 /*! 

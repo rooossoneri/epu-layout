@@ -249,10 +249,14 @@ width: 10px; }
 .location-head{
 	input{
 		width: 100%;
-		border-radius: 5px;
+		border-radius: 20px;
 		border: none;
+		background: #fff;
 		padding: 5px 10px;
 		box-sizing: border-box;
+	}
+	input:hover, input:focus, input:active{
+		border: none;
 	}
 }
 .location-btn{
@@ -492,6 +496,7 @@ width: 10px; }
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
+    z-index: 101;
     height: 100%;
     // display: none;
 }
@@ -511,8 +516,7 @@ width: 10px; }
 	display: block;
 }
 
-
-.calendar-picker{
+.calendar-wraps{
 	display: flex;
 	padding: 20px;
 	box-sizing: border-box;
@@ -520,6 +524,32 @@ width: 10px; }
 	background-color: #515b61;
 	margin: 0 auto;
 }
+
+.calendar-picker{
+	
+	position: absolute;
+	top: 70px;
+	right: 0;
+	width: 400px;
+	display: none;
+
+	&:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    right: 28px;
+    top: -8px;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #515b61;
+	}
+}
+
+.date-begin{
+	text-align: left;
+}
+
 .date-end{
 	text-align: right;
 	input{
@@ -552,5 +582,47 @@ width: 10px; }
 	:-ms-input-placeholder{
 		color: #f3f4f4;
 		font-family: $Lato-Semibold; 
+	}
+}
+
+.money-dropdown{
+	position: absolute;
+	display: none;
+	top: 60px;
+	left: 0;
+	background-color: #dee8ea;
+	width: 270px;
+	padding: 10px;
+	z-index: 1;
+}
+
+.money-wrap{
+	display: flex;
+	justify-content: space-between;
+}
+
+.money-left, .money-right{
+	width: 45%;
+	text-align: left;
+	label{
+		font-family: $Lato-Semibold;
+		font-size: 12px;
+		color: $text-bold;
+	}
+	input{
+		background-color: #FFF;
+		border-radius: 6px;
+		padding: 3px 4px;
+		margin-top: 6px;
+	}
+}
+
+.money-btn{
+	margin-top: 20px;
+	text-align: left;
+
+	button{
+		border: none;
+		cursor: pointer;
 	}
 }
