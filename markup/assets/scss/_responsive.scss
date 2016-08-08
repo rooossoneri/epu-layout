@@ -1,3 +1,8 @@
+
+@media screen and (max-width: 2500px){
+
+}
+
 @media screen and (max-width: 1600px) {
   .cabinets{
     width: 1200px;
@@ -6,3 +11,615 @@
     width: 860px;
   }
 }
+
+
+@media screen and (max-width: 1368px){
+	.main{
+		height: 420px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.inner{
+		width: 950px;
+	}
+		.openMenu, .closebtn{
+		display: none;
+	}
+	.logo{
+		width: 125px;
+	}
+
+	.tender-input input{
+		width: 360px;
+	}
+
+	.videos-block{
+		flex-direction: column;
+	}
+
+	.video{
+		margin: 0 auto;
+	}
+
+	.menu a{
+		font-size: 14px;
+	}
+
+	.menu li{
+		margin-left: 20px;
+	}
+
+	.btn-red{
+		padding: 16px 25px;
+	}
+
+	.tender{
+		max-width: 296px;
+	}
+
+	.tender:nth-child(4n+1){
+		margin-left: 30px;
+	}
+	.tender:nth-child(3n+1){
+		margin-left: 0;
+	}
+
+	.owl-prev{
+		left: 0;
+	}
+
+	.owl-next{
+		right: 0;
+	}
+
+	.owl-item{
+		width: 200px;
+	}
+
+	.instruction{
+		max-width: 250px;
+	}
+	.news-sidebar{
+		display: none;
+	}
+		.services-wrap{
+		flex-wrap: wrap;
+	}
+	.service:nth-child(3){
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.inner{
+		width: 770px;
+	}
+
+	.main-head{
+		left: 5%;
+	}
+
+.openMenu, .closebtn{
+	display: flex;
+}
+
+	.tenders-form form{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.contact-phones a{
+		font-size: 14px;
+	}
+
+	.location i, .money i, .calendar i{
+		margin-left: -5px;
+	}
+
+	.tender-input{
+		order: 1;
+		margin: 0 0 0 auto;
+	}
+
+	.filter{
+		order: 3;
+		margin-top: 20px;
+		margin: 20px auto 0;
+	}
+
+	.dkpp{
+		margin-left: 0;
+	}
+
+	.find-tender-btn{
+		order: 2;
+		margin: 0 auto 0 20px;
+	}
+
+	.all-tenders{
+		justify-content: space-around;
+	}
+
+	.tender{
+		margin-left: 0;
+	}
+
+	.tender:nth-child(4n+1){
+		margin-left: 0;
+	}
+	.app1, .app2{
+		display: flex;
+		align-items: center;
+	}
+
+	.app-advantages ul{
+		margin-top: 75px;
+	}
+
+	.app-1 .app-text{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.app-2{
+		background-size: 85% 85%;
+    background-position: center center;
+	}
+
+	.app-text{
+		line-height: 30px;
+	}
+
+	.app-2 a{
+		bottom: 170px;
+		left: 51%;
+	}
+
+	.footer-menu a{
+		padding-right: 10px;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+
+	.menu li:first-child{
+		margin-left: 20px;
+	}
+	.location a, .dkpp a, .cpv a, .money a, .calendar a{
+		padding: 15px 10px;
+	}
+
+	.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+	.sidenav a {
+	    padding: 3px 8px 3px 32px;
+	    text-decoration: none;
+	    font-size: 18px;
+	    line-height: 50px;
+	    color: #86949b;
+	    display: block;
+	    transition: 0.3s
+	}
+
+	.sidenav li{
+		border-bottom: 2px solid #f8fafb;
+	}
+
+	.sidenav a:hover, .offcanvas a:focus{
+	    color: $red1;
+	}
+
+	.closebtn {
+	    position: absolute;
+	    top: 0;
+	    right: 25px;
+	    font-size: 50px !important;
+	    margin-left: 50px;
+	}
+	.openMenu{
+    font-size: 30px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background: $yellow;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    order: 3;
+    align-items: center;
+	}
+	.contacts-wrap{
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 570px;
+	}
+	.contact-text{
+		margin-top: 20px;
+	}
+	.contact-item:nth-child(3), .contact-item:nth-child(4){
+		margin-top: 30px;
+	}
+	button.accordion{
+		padding-right: 50px;
+	}
+	div.panel{
+		padding: 10px 15px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.inner{
+		width: 550px;
+	}
+
+	h1{
+		font-size: 32px;
+	}
+
+	.main-head p{
+		font-size: 16px;
+	}
+
+	.logo a{
+		line-height: 80px;
+	}
+
+	.tender{
+		width: 260px;
+	}
+
+	.advantages-items{
+		flex-direction: column;
+	}
+
+	.app-2{
+		background-image: none;
+	}
+
+	.app-2 a{
+		top: -20px;
+	}
+
+	.advantage-item{
+		width: 270px;
+		margin: 0 auto;
+		margin-top: 30px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+
+	.advantage-img{
+		margin: 0 auto;
+	}
+
+	.advantage-text{
+		justify-content: center;
+	}
+
+	.footer-top .inner{
+		flex-direction: column;
+	}
+
+	.footer-bottom .inner{
+		flex-direction: column;
+	}
+
+	.footer-emails, .footer-address{
+		margin-top: 50px;
+	}
+
+	.instructions{
+		margin-left: 70px;
+	}
+
+	.instruction{
+		max-width: 370px;
+	}
+	.news-block{
+		max-width: 100%;
+	}
+	.news-img img{
+		max-width: 100%;
+	}
+	.news-head{
+		font-size: 18px;
+	}
+	.relative-news-wrap{
+		flex-direction: column;
+	}
+	.relative-simple-news{
+		margin: 0 auto;
+		margin-top: 30px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	.inputs-comment{
+		flex-direction: column;
+	}
+	.left-input, .right-input{
+		width: 100%;
+		input{
+			width: 100%;
+		}
+	}
+	.right-input{
+		margin-top: 20px;
+	}
+	#comment-form input, #comment-form textarea{
+		box-sizing: border-box;
+	}
+	.service{
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.inner{
+		width: 450px;
+	}
+	.contacts-wrap{
+		flex-direction: column;
+	}
+	.contact-item{
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.contact-phones{
+		margin-right: 0;
+	}
+	.contact-phones ul{
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	.contact-phones li{
+		line-height: 20px;
+		margin-right: 15px;
+	}
+	.tenders-sort{
+		flex-direction: column;
+	}
+	.view{
+		display: none;
+	}
+	.tender-input{
+		margin-left: 0;
+	}
+	.tender-input input{
+		width: 320px;
+	}
+	.find-tender-btn{
+		margin-left: 10px;
+	}
+	.find-tender-btn button{
+		  padding: 18px 19px 18px 47px;
+	}
+	.filter{
+		display: none;
+	}
+	.app-advantages{
+		flex-direction: column;
+	}
+	.app-2{
+		order: 1;
+		height: auto;
+	}
+	.app-1{
+		order: 2;
+	}
+	.app-3{
+		order: 3;
+	}
+	.app-advantages li{
+		margin-top: 20px;
+	}
+	.app-1 .app-text{
+		order: 2;
+		justify-content: flex-start;
+		margin-left: 10px;
+	}
+	.app-3{
+		.app-advantages ul{
+		margin-top: 20px;
+	}
+}
+	.news-links li{
+		padding: 0 6px;
+	}
+	.app-advantages ul{
+		// margin-top: 20px;
+	}
+	.app-advantages .advantage-ul{
+		margin-top: 20px;
+	}
+	.app-3 .app-image{
+		margin-left: 20px;
+	}
+	.app-3 .app-text{
+	  margin-left: 10px;
+  	display: flex;
+  	align-items: center;
+	}
+	.footer-menu li{
+		margin-left: 15px;
+	}
+	.footer-menu a{
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 480px){
+	.inner{
+		width: 360px;
+	}
+	.footer-menu{
+		display: none;
+	}
+	h1{
+		font-size: 24px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	.main-head p{
+		font-size: 14px;
+	}
+	.main-btns{
+		flex-direction: column;
+	}
+	.btn-create{
+		margin-left: 0;
+		margin-top: 50px;
+	}
+	.openMenu{
+		width: 50px;
+		height: 50px;
+		margin-top: 10px;
+	}
+	.header-bottom{
+		padding: 12px 0;
+	}
+	.header-bottom .inner{
+		flex-wrap: wrap;
+	}
+	.cabinet{
+		order: 3;
+		display: none;
+	}
+	.logo a{
+		line-height: 55px;
+	}
+	.contact-phones:before{
+		display: none;
+	}
+	.types{
+		flex-wrap: wrap;
+	}
+	.comercial{
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.advantage-text{
+		margin-top: 10px;
+	}
+	.section-head:before{
+		top: 30px;
+	}
+	.section-head:after{
+		top: 34px;
+	}
+	.tender{
+		max-width: 100%;
+		width: 100%;
+	}
+	.tender-input input{
+		width: 290px;
+	}
+	.find-tender-btn button{
+		color: transparent;
+	  padding: 18px 0;
+	  left: -10px;
+	  border-top-left-radius: 0;
+	  border-bottom-left-radius: 0;
+	}
+	.find-tender-btn button:before{
+		left: 16px;
+	}
+	.pdf-blocks ul{
+		flex-direction: column;
+		margin-left: 20px;
+	}
+	.pdf-blocks li{
+		margin-top: 10px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	.pdf-blocks p{
+		margin-left: 10px;
+	}
+	.pdf-blocks a{
+		display: flex;
+	}
+	.pdf-blocks img{
+		width: 39px;
+		height: 42px;
+	}
+	.footer-phones a, .footer-phones p, .footer-emails a, .footer-emails p, .footer-address a, .footer-address p{
+		font-size: 14px;
+	}
+	.footer-copyright .inner{
+		flex-direction: column;
+	}
+	.footer-menu a{
+		font-size: 10px;
+	}
+	.footer-menu li{
+		margin-left: 10px;
+	}
+	.footer-social ul{
+		margin: 0 auto;
+	}
+	.language-switcher img{
+		width: 25px;
+		height: 25px;
+	}
+	.language-switcher a{
+		padding: 8px;
+	}
+	.contact-phones ul{
+		margin-top: 2px;
+	}
+	button.accordion{
+		padding-right: 50px;
+	}
+	.instruction:before{
+		left: -72px;
+	}
+	.news-links{
+		flex-wrap: wrap;
+	}
+	.share{
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.inner{
+		width: 300px;
+	}
+	.contact-phones a{
+		font-size: 11px;
+	}
+	video{
+		width: 270px;
+		margin: 0 auto;
+	}
+	.footer-menu ul{
+		flex-direction: column;
+	}
+	.tender-input input{
+		width: 236px;
+	}
+}
+
+
+
+

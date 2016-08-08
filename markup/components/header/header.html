@@ -21,7 +21,8 @@
 			<div class="logo">
 				<a href="#!"><img src="%=static=%img/general/logo-main.png" alt="logo"></a>
 			</div>
-			<div class="menu">
+			<div class="menu sidenav" id="mySidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 				<nav>
 					<ul>
 						<li><a href="#!">Тендеры</a></li>
@@ -32,6 +33,7 @@
 					</ul>
 				</nav>
 			</div>
+			<span class="openMenu" onclick="openNav()">☰</span>
 			<div class="cabinet">
 				<div class="btn-cabinet">
 					<a id="auth-button" class="btn-red" href="#!">личный кабинет</a>

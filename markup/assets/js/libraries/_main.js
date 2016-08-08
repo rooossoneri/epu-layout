@@ -1,13 +1,17 @@
 $(document).ready(function() {
- 
+
 // SLIDER
 
   $(".slider").owlCarousel({
   	navigation: true,
   	pagination: false,
-  	items: 5
+  	items: 5,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1]
   });
- 
 });
 
 // DROPDOWNS

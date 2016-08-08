@@ -1,4 +1,30 @@
 // ALL BUTTONS
+
+.section-head{
+	    &:before{
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background-color: $red1;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background-color: $yellow;
+    }
+}
+.openMenu, .closebtn{
+	display: none;
+}
 .btn-red{
 	font-family: $Lato-Semibold;
   letter-spacing: 1px;
@@ -68,12 +94,13 @@
 }
 
 .main{
-	background-image: url("%=static=%general/main.jpg");
-	background-repeat: no-repeat;
-  background-size: 100%;
-	height: 480px;
-	position: relative;
-	padding-bottom: 0;
+  background-image: url("../img/general/main.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 590px;
+  position: relative;
+  padding-bottom: 0;
 }
 
 .main-head{
@@ -88,7 +115,6 @@
 		letter-spacing: 1px;
 	}
 }
-
 
 // TENDERS SECTION
 

@@ -232,3 +232,13 @@ for (i = 0; i < acc.length; i++) {
         this.nextElementSibling.classList.toggle("show");
     }
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "90%";
+    document.getElementById("main").style.marginLeft = "90%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}

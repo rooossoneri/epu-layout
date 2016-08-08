@@ -87,27 +87,6 @@
     span{
         font-family: $Lato-Black;
     }
-    &:before{
-        content: '';
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 30px;
-        height: 1px;
-        background-color: $red1;
-    }
-    &:after{
-        content: '';
-        position: absolute;
-        top: 48px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 30px;
-        height: 1px;
-        background-color: $yellow;
-    }
-
 }
 
 
