@@ -89,13 +89,23 @@ $('.reg-dropdown').on('click', function(){
     $('.hidden-types').addClass('active');
 });
 
-$(".location, .location-btn").click(function(){
-    $(".location-dropdown").toggle();
-})
+// $(".location, .location-btn").click(function(){
+//     $(".location-dropdown").slideToggle("fast");
+// })
 
  $(".location-dropdown").click(function(event){
   event.stopPropagation();
  });
+
+$(".location").on("click", function (event) {
+    event.stopPropagation();
+    // $(".location-dropdown").slideToggle("fast");
+    $(".location-dropdown").slideToggle("fast");
+});
+
+$(document).on("click", function () {
+    $(".location-dropdown").hide();
+});
 
 $(".calendar").click(function(){
     $(".calendar-picker").toggle();
@@ -112,16 +122,17 @@ $(".calendar").click(function(){
  $(".money-dropdown").click(function(event){
   event.stopPropagation();
  });
-$(document).mouseup(function (e)
-{
-    var container = $(".location-dropdown, .calendar-picker, .money-dropdown");
+// $(document).mouseup(function (e)
+// {
+//     var container = $(".location-dropdown, .calendar-picker, .money-dropdown");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.hide();
-    }
-});
+//     if (!container.is(e.target) // if the target of the click isn't the container...
+//         && container.has(e.target).length === 0) // ... nor a descendant of the container
+//     {
+//         container.hide();
+//     }
+// });
+
 // ACTIVE ON SIDEBAR MENU
 
 $(document).ready(function(){
