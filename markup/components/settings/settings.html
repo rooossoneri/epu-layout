@@ -1,51 +1,6 @@
 <div class="cabinet-wrap">
   <div class="cabinets">
-    <div class="sidebar">
-      <div class="profile">
-        <div class="profile-img">
-          <a href="#"><img src="%=static=%img/general/profile.png" alt=""></a>
-        </div>
-        <div class="profile-name">
-          <h3>Владислав Григоренков</h3>
-          <p>Поставщик</p>
-        </div>
-      </div>
-      <div class="sidebar-menu">
-        <nav>
-          <ul>
-            <li>
-              <a class="profile-icon active" href="cabinet.html">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              Профиль
-              </a>
-            </li>
-            <li><a class="company-icon" href="companies.html"><i class="fa fa-building" aria-hidden="true"></i>Компании</a></li>
-            <li><a class="purchase-icon" href="goverment-tenders.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Закупки</a></li>
-            <li><a class="tenders-icon" href="cabinet-tenders.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Тендеры</a></li>
-            <li><a class="notify-icon" href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>уведомления</a></li>
-            <li><a class="settings-icon" href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i>Настройки</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="cabinet-inner">
-      <div class="cabinet-head">
-        <div class="cabinet-home">
-          <div class="home">
-            <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-          </div>
-          <div class="notification">
-            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
-            <!-- <div class="notification-count">2</div> -->
-          </div>
-        </div>
-        <div class="logo">
-          <a href="#"><img src="%=static=%img/general/logo-main.png" alt=""></a>
-        </div>
-        <div class="cabinet-out">
-          <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-        </div>
-      </div>
+    {{> sidebar/sidebar}}
       <div class="settings-head">
         Настройки личного кабинета
       </div>

@@ -119,7 +119,7 @@ input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid $red1;
-  box-shadow: 0 1px 0 0 $red1;
+  // box-shadow: 0 1px 0 0 $red1;
 }
 
 }
@@ -165,7 +165,7 @@ input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
   border-bottom: 1px solid $red1;
-  box-shadow: 0 1px 0 0 $red1;
+  // box-shadow: 0 1px 0 0 $red1;
 }
 
 input:not([type]).valid + label:after,
@@ -225,7 +225,7 @@ input[type=search]:focus.invalid,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea:focus.invalid {
   border-bottom: 1px solid #F44336;
-  box-shadow: 0 1px 0 0 #F44336;
+  // box-shadow: 0 1px 0 0 #F44336;
 }
 
 input:not([type]).invalid + label:after,
@@ -444,7 +444,7 @@ select {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #dee8ea;
+  border-bottom: 1px solid #dee8ea;
   outline: none;
   height: 2rem;
   line-height: 3rem;

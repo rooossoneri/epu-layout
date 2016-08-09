@@ -242,3 +242,23 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+
+// function openSidebar() {
+//     document.getElementById("sidebar").style.width = "270px";
+//     document.getElementById("main").style.marginLeft = "270px";
+// }
+
+// function closeSidebar() {
+//     document.getElementById("sidebar").style.width = "0";
+//     document.getElementById("main").style.marginLeft= "0";
+// }
+
+function openSidebar() {
+    document.getElementById("sidebar").classList.add("side-bar");
+    document.getElementById("main").classList.add("left-bar");
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").classList.remove("side-bar");
+    document.getElementById("main").classList.remove("left-bar");
+}

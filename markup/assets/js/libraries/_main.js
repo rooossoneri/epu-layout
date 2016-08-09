@@ -10,7 +10,8 @@ $(document).ready(function() {
     itemsDesktopSmall : [980,3],
     itemsTablet: [768,2],
     itemsTabletSmall: false,
-    itemsMobile : [479,1]
+    // itemsCustom: [600, 1],
+    itemsMobile : [479,1],
   });
 });
 
