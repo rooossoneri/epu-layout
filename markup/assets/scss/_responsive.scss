@@ -57,7 +57,7 @@
 	.cabinets .tender{
 		margin-left: 25px;
 	}
-	
+
 	.cabinets .tender:nth-child(3n+1){
 		margin-left: 25px;
 	}
@@ -111,6 +111,16 @@
 
 	.tender{
 		max-width: 296px;
+	}
+
+	.tender.tender-line{
+		max-width: 100%;
+	}
+	.tender-line .tender-head, .tender-line .tender-price{
+		margin-top: 30px;
+	}
+	.tender-line .tender-head{
+		max-width: 450px;
 	}
 
 	.tender:nth-child(4n+1){
@@ -365,6 +375,23 @@
 		margin-left: 0;
 	}
 
+	.tender.tender-line{
+		max-width: 296px;
+		flex-direction: column;
+	}
+
+	.tender-line .customer-name{
+		line-height: 16px;
+	}
+
+	.tender-line .tender-btn{
+		margin-top: 15px;
+	}
+
+	.tender-line .tender-price{
+		margin-top: 10px;
+	}
+
 	.tender:nth-child(4n+1){
 		margin-left: 0;
 	}
@@ -421,6 +448,7 @@
     left: 0;
     background-color: #fff;
     transition: 0.5s;
+    overflow-x: hidden;
     padding-top: 60px;
 }
 		.sidebar{
@@ -523,6 +551,9 @@
 	}
 	.side-bar{
 		width: 270px;
+	}
+	.main-menu{
+		width: 90%;
 	}
 	.left-bar{
 		margin-left: 270px;
@@ -688,6 +719,14 @@
 	}
 	.company, .cabinet-tender{
 		max-width: 240px;
+	}
+	.money-dropdown{
+		right: 0;
+		left: auto;
+	}
+	.money-dropdown:before{
+		right: 28px;
+		left: auto;
 	}
 }
 

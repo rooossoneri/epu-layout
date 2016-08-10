@@ -30,7 +30,7 @@
             <a href="#">ДКПП</a>
           </div>
           <div class="cpv">
-            <a href="#">CPV</a>
+            <a href="#!" id="CPVPopup">CPV</a>
           </div>
           <div class="location">
             <a href="#!"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
@@ -140,6 +140,7 @@
         </div>
     </div>
     </form>
+
   </div>
 </section>
 <section class="tenders">
@@ -150,14 +151,14 @@
     </div>
     <div class="tenders-sort">
       <div class="types">
-        <div class="all"><a class="active" href="#">Все</a></div>
-        <div class="goverments"><a href="#">Государстственные</a></div>
-        <div class="comercial"><a href="#">Коммерческие</a></div>
+        <div class="all"><a class="" href="#!">Все</a></div>
+        <div class="goverments"><a href="#!">Государстственные</a></div>
+        <div class="comercial"><a href="#!">Коммерческие</a></div>
       </div>
       <div class="view">
         <ul>
-          <li><a class="square-view" href="#"></a></li>
-          <li><a class="lines-view" href="#"></a></li>
+          <li><a class="square-view active" href="#!"></a></li>
+          <li><a class="lines-view" href="#!"></a></li>
         </ul>
       </div>
     </div>
@@ -603,12 +604,11 @@
         </div>
         <div class="reg-type">
           <div class="reg-dropdown">
-            <p>Я поставщик</p>
-            <span class="dropdown-toggle"></span>
-            <ul class="hidden-types">
-              <li><a href="#">Я заказчик</a></li>
-              <li><a href="#">Я поставщик</a></li>
-            </ul>
+             <select name="" id="">
+              <option value="" selected="">Я поставщик</option>
+              <option value="">Я поставщик</option>
+              <option value="">Я заказчик</option>
+            </select>
           </div>
         </div>
       </div>
@@ -625,11 +625,11 @@
         </div>
         <div class="reg-type">
           <div class="reg-dropdown">
-            <p>Я заказчик</p>
-            <span class="dropdown-toggle"></span>
-            <select name="type" id=""></select>
-            <option value="Заказчик">Я заказчик</option>
-            </ul>
+             <select name="" id="">
+              <option value="" selected="">Я поставщик</option>
+              <option value="">Я поставщик</option>
+              <option value="">Я заказчик</option>
+            </select>
           </div>
         </div>
       </div>
@@ -678,7 +678,8 @@
     		</div>
     	</div>
     </div> -->
-</div><div class="cpv-popup" id="productsIDTypePopup">
+</div>
+    <div class="cpv-popup" id="productsIDTypePopup" style="display: none">
               <span class="close-popup">×</span>
               <p class="popup-head">Классификация кода продукции </p>
               <div class="input-popup">

@@ -99,7 +99,7 @@ input:checked:after{
 }
 .close-popups{
     position: absolute;
-    top: -35px;
+    top: -38px;
     right: -7px;
     font-size: 35px;
     width: 40px;
@@ -215,6 +215,18 @@ input:checked:after{
 	padding: 10px;
 	background-color: $block-bg;
 
+	&:before{
+		content: '';
+	  position: absolute;
+	  width: 0;
+	  left: 28px;
+	  top: -8px;
+	  height: 0;
+	  border-left: 8px solid transparent;
+	  border-right: 8px solid transparent;
+	  border-bottom: 8px solid #dee8ea
+	}
+
 ::-webkit-scrollbar              { background-color: #dee8ea; width: 10px; border-radius: 5px;
  }
 // ::-webkit-scrollbar-button       { background-color: transparent;}
@@ -295,7 +307,7 @@ width: 10px; }
 	font-size: 14px;
 	position: absolute;
 	top: 6px;
-	left: 4px;
+	left: 5px;
 	color: #fff;
 }
 }
@@ -351,6 +363,7 @@ width: 10px; }
 }
 .reg-dropdown{
 	position: relative;
+	margin-top: 20px;
 	p{
 		border-bottom: 2px solid $block-bg;
 		padding: 11px 15px;
@@ -360,10 +373,13 @@ width: 10px; }
 		margin-bottom: 0;
 	}
 	span{
-		position: absolute;
-		top: 17px;
-		right: 11px;
-		@include bg($dropdown);
+		// position: absolute;
+		// top: 17px;
+		// right: 11px;
+		// @include bg($dropdown);
+	}
+	.select-wrapper input.select-dropdown{
+		width: 97%;
 	}
 }
 .hidden-types{
@@ -526,7 +542,6 @@ width: 10px; }
 }
 
 .calendar-picker{
-	
 	position: absolute;
 	top: 70px;
 	right: 0;
@@ -569,7 +584,7 @@ width: 10px; }
 	}
 	::-webkit-input-placeholder {
 		color: #f3f4f4;
-		font-family: $Lato-Semibold; 
+		font-family: $Lato-Semibold;
 	}
 	::-moz-placeholder{
 		color: #f3f4f4;
@@ -577,23 +592,35 @@ width: 10px; }
 	 }/* Firefox 19+ */
 	:-moz-placeholder{
 		color: #f3f4f4;
-		font-family: $Lato-Semibold; 
+		font-family: $Lato-Semibold;
 		}/* Firefox 18- */
 	:-ms-input-placeholder{
 		color: #f3f4f4;
-		font-family: $Lato-Semibold; 
+		font-family: $Lato-Semibold;
 	}
 }
 
 .money-dropdown{
 	position: absolute;
 	display: none;
-	top: 60px;
+	top: 70px;
 	left: 0;
 	background-color: #dee8ea;
 	width: 270px;
 	padding: 10px;
 	z-index: 1;
+
+	&:before{
+		content: '';
+	  position: absolute;
+	  width: 0;
+	  left: 28px;
+	  top: -8px;
+	  height: 0;
+	  border-left: 8px solid transparent;
+	  border-right: 8px solid transparent;
+	  border-bottom: 8px solid #dee8ea
+	}
 }
 
 .money-wrap{
@@ -614,6 +641,7 @@ width: 10px; }
 		border-radius: 6px;
 		padding: 3px 4px;
 		margin-top: 6px;
+		width: 95%;
 	}
 }
 

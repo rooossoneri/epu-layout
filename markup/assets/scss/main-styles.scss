@@ -216,7 +216,7 @@
 .location-dropdown{
 	display: none;
 	position: absolute;
-	top: 60px;
+	top: 70px;
 	left: 0;
 	width: 190px;
 	z-index: 1;
@@ -253,6 +253,13 @@
 	width: 22px;
 	height: 22px;
 	margin-right: 18px;
+	@include bg($square-normal);
+	&:hover{
+		@include bg($squares);
+	}
+}
+
+.square-view.active{
 	@include bg($squares);
 }
 
@@ -261,6 +268,13 @@
 	height: 22px;
 	display: block;
 	@include bg($lines);
+	&:hover{
+		@include bg($lines-hover);
+	}
+}
+
+.lines-view.active{
+	@include bg($lines-hover);
 }
 
 .tenders-sort{
@@ -287,7 +301,7 @@
 	}
 }
 
-.all a.active{
+.types a.active{
 	background-color: $red1;
 	color: $white;
 }
@@ -795,6 +809,10 @@ progress::-webkit-progress-value {
 	color: $Lato;
 	font-weight: 700;
 	color: #86949b;
+	transition: color .35s ease;
+	&:hover{
+		color: $red1;
+	}
 }
 
 .simple-delete{

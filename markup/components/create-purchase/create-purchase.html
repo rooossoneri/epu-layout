@@ -32,10 +32,6 @@
                   <input type="text" id="purchase-name">
                   <label for="purchase-name">Конкретное название предмета закупки</label>
                 </div>
-                <div class="create-purchase-documentation">
-                  <p>Документация насчет закупки</p>
-                  <input type="file" placeholder="Прикрепить файл">
-                </div>
                 <div class="notices input-field">
                   <input type="text" id="notices">
                   <label for="notices">Заметки</label>
@@ -46,13 +42,13 @@
                   <div class="calendar-text">Прием предложений:</div>
                   <div class="calendar-wrap">
                     <div class="calendar-left">
-                      <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
+                      <input type="text" id="date_timepicker_start" placeholder="22.10.2016 в 14:50">
                     </div>
                     <div class="calendar-center">
                       <p>до</p>
                     </div>
                     <div class="calendar-right">
-                      <input type="text" id="datetimepicker" placeholder="22.10.2016 в 14:50">
+                      <input type="text" id="date_timepicker_end" placeholder="22.10.2016 в 14:50">
                     </div>
                   </div>
                 </div>
@@ -123,7 +119,7 @@
                 <div class="measure-wrap">
                 <a href="#"><img src="%=static=%img/general/delete-button.png" alt=""></a>
                   <div class="measure-name input-field">
-                    <input type="text" id="measure-name1">
+                    <input type="text" id="measure-name">
                     <label for="measure-name">Название</label>
                   </div>
                   <div class="measure-description input-field">
@@ -146,7 +142,6 @@
               </div>
             </div>
             <input type="button" name="previous" class="previous action-button" value="Шаг назад" />
-        
               <input type="button" name="next" class="next action-button" value="Далее" />
                   </fieldset>
             <fieldset>
@@ -160,13 +155,9 @@
                   </div>
                   <div class="list-products list3">
                     <div class="left-products">
-                      <div class="lot-name input-field">
-                        <input type="text" id="lot-name">
-                        <label for="lot-name">Название части (лота) предмета закупки</label>
-                      </div>
-                      <div class="create-purchase-documentation">
-                        <p>Документация насчет закупки</p>
-                        <input type="file" placeholder="Прикрепить файл">
+                      <div class="lot-name1 input-field">
+                        <input type="text" id="lot-name1">
+                        <label for="lot-name1">Название части (лота) предмета закупки</label>
                       </div>
                       <div class="notices input-field">
                         <input type="text" name="notices1">
@@ -347,10 +338,6 @@
                         <input type="text" id="lot-name">
                         <label for="lot-name">Название части (лота) предмета закупки</label>
                       </div>
-                      <div class="create-purchase-documentation">
-                        <p>Документация насчет закупки</p>
-                        <input type="file" placeholder="Прикрепить файл">
-                      </div>
                       <div class="notices input-field">
                         <input type="text" name="notices1">
                         <label for="notices1">Заметки</label>
@@ -377,7 +364,7 @@
                     <a href="#" class="delete-btn">Удалить лот</a>
                   </div>
                 </div>
-                <div class="lot goods">
+                <div class="lot goods product-lot">
                   <div class="lot-head">
                     <span>товары/услуги к <span class="lot-bold">лоту №1</span></span>
                     <a href="#"><span class="lot-bolds">Товар №1</span></a>
