@@ -39,6 +39,24 @@
     }
 }
 
+.btn-green{
+	font-family: $Lato-Semibold;
+  letter-spacing: 1px;
+  padding: 18px 36px;
+  background-color: #69b284;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+}
+
+button.btn-green{
+	border: none;
+}
+
+button.btn-grey1{
+	border: none;
+}
+
 .btn-grey1{
 	font-family: "Lato-Semibold", Helvetica, Arial, sans-serif;
   font-size: 12px;
